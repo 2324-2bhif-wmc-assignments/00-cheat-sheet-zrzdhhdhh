@@ -1,0 +1,19 @@
+/* gilt für jedes tag oder man kann auch body benutzen */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: xxx-large;
+    color: #5d0997;
+    background-color: black;
+}
+.secondary-title {
+    color: #5d0997;
+}
+.main {
+    font-weight: 200;
+}
+h2.main {
+    font-weight: 200;
+    color: hotpink;
+}
