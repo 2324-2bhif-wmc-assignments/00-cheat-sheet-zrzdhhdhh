@@ -57,8 +57,17 @@
                 A component is undefined if it has an associated delimiter and the delimiter does not appear in the URI; the scheme and path components are always defined. A component is empty if it has no characters; the scheme component is always non-empty. Authority components have subcomponents.
             </p>
             <p>
-                The URI consists of the following: A non-empty scheme component, consisting of a sequence of characters beginning with a letter. Although schemes are case-insensitive, the canonical form is lowercase and documents that specify schemes must do so with lowercase letters. Examples of popular schemes include http, https, ftp, mailto, file, data and irc. URI schemes should be registered with the Internet Assigned Numbers Authority (IANA), although non-registered schemes are used in practice. An optional authority component, which consists of an optional userinfo, a host subcomponent and an optional port. The userinfo may consist of a username and an optional password. Use of the format username:password in the userinfo subcomponent is deprecated for security reasons. Applications should not render as clear text any data after the first colon (:) found within an userinfo subcomponent unless the data after the colon is the empty string (indicating no password). The host subcomponent consists either of a registered name or an IP address. The port consists of decimal digits. There is also a path component, consisting of a sequence of path segments. A path is always defined, though it may be empty.  A path component may resemble or map exactly to a file system path but does not always imply a relation to one. If an authority component is defined, then the path component must either be empty or begin with a slash. By convention, in http and https URIs, the last part of a path is named path info and it is optional. It is composed by zero or more path segments that do not refer to an existing physical resource name (e.g. a file, an internal module program or an executable program) but to a logical part (e.g. a command or a qualifier part) that has to be passed separately to the first part of the path that identifies an executable module or program managed by a web server; this is often used to select dynamic content (a document, etc.) or to tailor it as requested (see also: CGI and PATH_INFO, etc.). An optional query or fragment could also be: a query consists of query strings of non-hierarchical data. Its syntax is not well-defined, but by convention is most often a sequence of attribute–value pairs separated by a delimiter. A fragment contains a fragment identifier providing direction to a secondary resource, such as a section heading in an article identified by the remainder of the URI. When the primary resource is an HTML document, the fragment is often an id attribute of a specific element, and web browsers will scroll this element into view.
-            </p>>
+                The URI consists of the following: A non-empty scheme component, consisting of a sequence of characters beginning with a letter. Although schemes are case-insensitive, the canonical form is lowercase and documents that specify schemes must do so with lowercase letters. Examples of popular schemes include http, https, ftp, mailto, file, data and irc. URI schemes should be registered with the Internet Assigned Numbers Authority (IANA), although non-registered schemes are used in practice.
+            </p>
+            <p>
+                An optional authority component, which consists of an optional userinfo, a host subcomponent and an optional port. The userinfo may consist of a username and an optional password. Use of the format username:password in the userinfo subcomponent is deprecated for security reasons. Applications should not render as clear text any data after the first colon (:) found within an userinfo subcomponent unless the data after the colon is the empty string (indicating no password).
+            </p>
+            <p>
+                The host subcomponent consists either of a registered name or an IP address. The port consists of decimal digits. There is also a path component, consisting of a sequence of path segments. A path is always defined, though it may be empty.  A path component may resemble or map exactly to a file system path but does not always imply a relation to one. If an authority component is defined, then the path component must either be empty or begin with a slash. By convention, in http and https URIs, the last part of a path is named path info and it is optional. It is composed by zero or more path segments that do not refer to an existing physical resource name (e.g. a file, an internal module program or an executable program) but to a logical part (e.g. a command or a qualifier part) that has to be passed separately to the first part of the path that identifies an executable module or program managed by a web server; this is often used to select dynamic content (a document, etc.) or to tailor it as requested (see also: CGI and PATH_INFO, etc.).
+            </p>
+            <p>
+                An optional query or fragment could also be: a query consists of query strings of non-hierarchical data. Its syntax is not well-defined, but by convention is most often a sequence of attribute–value pairs separated by a delimiter. A fragment contains a fragment identifier providing direction to a secondary resource, such as a section heading in an article identified by the remainder of the URI. When the primary resource is an HTML document, the fragment is often an id attribute of a specific element, and web browsers will scroll this element into view.
+            </p>
         </section>
         <h2>
            Web Server
@@ -177,19 +186,33 @@
             <p>
                 News story
             </p>
-
+            <h3>
+                &lt;section&gt;
+            </h3>
             <p>
                 The &lt;section&gt; tag defines a section in a document.
             </p>
+            <h3>
+                &lt;p&gt;
+            </h3>
             <p>
                 The &lt;p&gt; tag defines a paragraph. Browsers automatically add a single blank line before and after each &lt;p&gt; element.
             </p>
+            <h3>
+                &lt;div&gt;
+            </h3>
             <p>
                 The &lt;div&gt; tag defines a division or a section in an HTML document. The &lt;div&gt; tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. The &lt;div&gt; tag is easily styled by using the class or id attribute.
             </p>
+            <h3>
+                &lt;span&gt;
+            </h3>
             <p>
                 The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document. The &lt;span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute. The &lt;span> tag is much like the &lt;div> element, but &lt;div> is a block-level element and &lt;span> is an inline element.
             </p>
+            <h3>
+                &lt;a&gt;
+            </h3>
             <p>
                 The &lt;a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the &lt;a> element is the href attribute, which indicates the link's destination. By default, links will appear as follows in all browsers:
             </p>
@@ -212,8 +235,23 @@
                 DOCTYPE represents document type and helps the browser display web pages. It's not case-sensitive and must appear only once at the top.
             </p>
             <p>
-                
+                Headings are defined by the &lt;h1&gt; through &lt;h6&gt; tags. They decrease in significance.
             </p>
+            <p>
+                Paragraphs are defined with &lt;p&gt;.
+            </p>
+            <p>
+                HTML links are defined with the &lt;a&gt; tag: the destination is defined by "href". Attributes are there to provide additional information.
+            </p>
+            <p>
+                Images are defined with the &lt;img&gt; tag. It contains the source (src), alternative text (alt) (needed when image cannot be loaded), and the width and height.
+            </p>
+            <p>
+                HTML can be viewed by inspecting a website.
+            </p>
+            <h3>
+
+            </h3>
         </section>
     </article>
 </body>
