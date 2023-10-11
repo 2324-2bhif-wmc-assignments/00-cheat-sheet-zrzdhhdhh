@@ -7,8 +7,17 @@
 </head>
 <body>
     <article>
-        <h1>WMC</h1>
-        <h2 class="secondary-title">
+        <h1>
+            Table of Contents
+        </h1>
+        <ul>
+            <li><a href="#world wide web">The World Wide Web</a></li>
+            <li><a href="#urls">URLs</a></li>
+            <li><a href="#web server">Web Servers</a></li>
+            <li><a href="#web browser">Web Browsers</a></li>
+            <li><a href="#html">HTML</a></li>
+        </ul>
+        <h2 id="world wide web">
             The World Wide Web
         </h2>
         <section>
@@ -37,7 +46,7 @@
                 The World Wide Web has been central to the development of the Information Age and is the primary tool billions of people use to interact on the Internet.
             </p>
         </section>
-        <h2>
+        <h2 id="urls">
             URLs
         </h2>
         <section>
@@ -69,7 +78,7 @@
                 An optional query or fragment could also be: a query consists of query strings of non-hierarchical data. Its syntax is not well-defined, but by convention is most often a sequence of attribute–value pairs separated by a delimiter. A fragment contains a fragment identifier providing direction to a secondary resource, such as a section heading in an article identified by the remainder of the URI. When the primary resource is an HTML document, the fragment is often an id attribute of a specific element, and web browsers will scroll this element into view.
             </p>
         </section>
-        <h2>
+        <h2 id="web server">
            Web Server
         </h2>
         <section>
@@ -86,7 +95,7 @@
                 Technologies such as REST and SOAP, which use HTTP as a basis for general computer-to-computer communication, as well as support for WebDAV extensions, have extended the application of web servers well beyond their original purpose of serving human-readable pages.
             </p>
         </section>
-        <h2>
+        <h2 id ="web browser">
             Web Browser
         </h2>
         <section>
@@ -112,7 +121,7 @@
                 During the course of browsing, cookies received from various websites are stored by the browser. Some of them contain login credentials or site preferences. However, others are used for tracking user behavior over long periods of time, so browsers typically provide a section in the menu for deleting cookies. Finer-grained management of cookies usually requires a browser extension.
             </p>
         </section>
-        <h2>
+        <h2 id ="html">
             HTML
         </h2>
         <section>
@@ -156,15 +165,11 @@
             <p>
                 The title element:
             </p>
-            <p>
-                defines a title in the browser toolbar
-            </p>
-            <p>
-                provides a title for the page when it is added to favorites
-            </p>
-            <p>
-                displays a title for the page in search-engine results
-            </p>
+            <ul>
+                <li>defines a title in the browser toolbar</li>
+                <li>provides a title for the page when it is added to favorites</li>
+                <li>displays a title for the page in search-engine results</li>
+            </ul>
             <p>
                 Some characters are reserved in HTML. If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags. Character entities are used to display reserved characters in HTML.
             </p>
@@ -198,6 +203,24 @@
             <p>
                 The &lt;p&gt; tag defines a paragraph. Browsers automatically add a single blank line before and after each &lt;p&gt; element.
             </p>
+            <p>
+                You can't be sure how it will be displayed. Adding space doesn't do the same in the web page.
+            </p>
+            <p>
+                The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+            </p>
+            <p>
+                The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page:
+            </p>
+            <p>
+                The HTML &lt;br&gt; element defines a line break.
+            </p>
+            <p>
+                Use &lt;br&gt; if you want a line break (a new line) without starting a new paragraph:
+            </p>
+            <p>
+                The element &lt;pre&gt; defines preformatted text. The text inside a &lt;pre&gt; element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+            </p>
             <h3>
                 &lt;div&gt;
             </h3>
@@ -216,15 +239,11 @@
             <p>
                 The &lt;a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the &lt;a> element is the href attribute, which indicates the link's destination. By default, links will appear as follows in all browsers:
             </p>
-            <p>
-                An unvisited link is underlined and blue
-            </p>
-            <p>
-                A visited link is underlined and purple
-            </p>
-            <p>
-                An active link is underlined and red
-            </p>
+            <ul>
+                <li>An unvisited link is underlined and blue</li>
+                <li>A visited link is underlined and purple</li>
+                <li>An active link is underlined and red</li>
+            </ul>
             <h3>
                 Basics
             </h3>
@@ -250,8 +269,49 @@
                 HTML can be viewed by inspecting a website.
             </p>
             <h3>
-
+                Elements
             </h3>
+            <p>
+                An HTML element is defined by a start tag, some content, and an end tag. Elements can be nested, but and the end tag is often needed, otherwise it may display incorrectly. They can be empty, and aren't case-sensitive ( &lt;p&gt; == &lt;P&gt;).
+            </p>
+            <h3>
+                Attributes
+            </h3>
+            <p>
+                All elements can have attributes. They provide additional information about elements, are specified in the start tag and usually come in name/value pairs (name=""). Examples of attributes:
+            </p>
+            <ul>
+                <li>href in &lt;a&gt;: URL of the page the link goes to</li>
+                <li>src in &lt;img&gt;: path to the image</li>
+                <li>width and height in &lt;img&gt;: provide info about size</li>
+                <li>alt in &lt;img&gt;: displays text when image cant be loaded</li>
+                <li>style: colors, font, size and more</li>
+                <li>lang in &lt;html&gt;: declares the language of the page</li>
+            </ul>
+            <p>
+                HTML comments are not displayed in the browser, but they can help document your HTML source code.
+            </p>
+            <p>
+                HTML links are hyperlinks. Clicking on a link jumps to another document. The HTML &lt;a&gt; defines a hyperlink. The most important part of the element is the href attribute.
+            </p>
+            <p>
+                By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link. This can by done by using &lt;target&gt;.
+            </p>
+            <p>
+                Attributes of &lt;target&gt;;
+            </p>
+            <ul>
+                <li>_self: Opens document on the same page it was clicked</li>
+                <li>_blank: Opens document in a new window/tab</li>
+                <li>_parent: Opens document in parent frame</li>
+                <li>_top: Opens document in the full body of the window</li>
+            </ul>
+            <p>
+                Both examples above are using an absolute URL (a full web address) in the href attribute. A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part).
+            </p>
+            <p>
+                To use an HTML button as a link, you have to add some JavaScript code.
+            </p>
         </section>
     </article>
 </body>
