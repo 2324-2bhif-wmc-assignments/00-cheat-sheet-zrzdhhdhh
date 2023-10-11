@@ -10,14 +10,46 @@
         <h1>
             Table of Contents
         </h1>
-        <ul>
-            <li><a href="#world wide web">The World Wide Web</a></li>
-            <li><a href="#urls">URLs</a></li>
-            <li><a href="#web server">Web Servers</a></li>
-            <li><a href="#web browser">Web Browsers</a></li>
-            <li><a href="#html">HTML</a></li>
-            <li><a href="#css">CSS</a></li>
-        </ul>
+        <div id="table-of-contents">
+            <ul>
+                <li><a href="#world wide web" class="main point">The World Wide Web</a></li>
+                <li><a href="#urls" class="main point">URLs</a></li>
+                <li><a href="#web server" class="main point">Web Servers</a></li>
+                <li><a href="#web browser" class="main point">Web Browsers</a></li>
+                <li><a href="#html" class="main point">HTML</a></li>
+                <li><a href="#doctype" class="sub point">DOCTYPE</a></li>
+                <li><a href="#html_small" class ="sub point">html</a></li>
+                <li><a href="#head" class="sub point">head</a></li>
+                <li><a href="#meta" class="sub point">meta</a></li>
+                <li><a href="#title" class="sub point">title</a></li>
+                <li><a href="#body" class="sub point">body</a></li>
+                <li><a href="#section" class="sub point">section</a></li>
+                <li><a href="#p" class="sub point">p</a></li>
+                <li><a href="#hr" class="sub point">hr</a></li>
+                <li><a href="#br" class="sub point">br</a></li>
+                <li><a href="#pre" class="sub point">pre</a></li>
+                <li><a href="#div" class="sub point">div</a></li>
+                <li><a href="#span" class="sub point">span</a></li>
+                <li><a href="#a" class="sub point">a</a></li>
+                <li><a href="#basics" class="sub point">basics</a></li>
+                <li><a href="#elements" class="sub point">elements</a></li>
+                <li><a href="#attributes" class="sub point">attributes</a></li>
+                <li><a href="#comments" class="sub point">comments</a></li>
+                <li><a href="#links" class="sub point">links</a></li>
+                <li><a href="#images" class="sub point">images</a></li>
+                <li><a href="#head" class="sub point">head further explained</a></li>
+                <li><a href="#css" class="main point">CSS</a></li>
+                <li><a href="#syntax" class="sub point">syntax</a></li>
+                <li><a href="#selectors" class="sub point">selectors</a></li>
+                <li><a href="#color" class="sub point">colors</a></li>
+                <li><a href="#backgrounds" class="sub point">backgrounds</a></li>
+                <li><a href="#text" class="sub point">text</a></li>
+                <li><a href="#fonts" class="sub point">fonts</a></li>
+                <li><a href="#links_2" class="sub point">links further explained</a></li>
+                <li><a href="#combinators" class="sub point">combinators</a></li>
+                <li><a href="#pseudo" class="sub point">pseudo</a></li>
+            </ul>
+        </div>
         <h2 id="world wide web">
             The World Wide Web
         </h2>
@@ -126,37 +158,37 @@
             HTML
         </h2>
         <section>
-            <h3>
+            <h3 id="doctype">
                 &lt;DOCTYPE&gt;
             </h3>
             <p>
                 All HTML documents must start with a &lt;!DOCTYPE declaration&gt;. The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
             </p>
-            <h3>
+            <h3 id="html_small">
                 &lt;html&gt;
             </h3>
             <p>
                 The &lt;html&gt; tag represents the root of an HTML document. The &lt;html&gt; tag is the container for all other HTML elements (except for the !DOCTYPE tag).
             </p>
-            <h3>
+            <h3 id="head">
                 &lt;head&gt;
             </h3>
             <p>
                 The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag. Metadata is data about the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information.
             </p>
-            <h3>
+            <h3 id="meta">
                 &lt;meta&gt;
             </h3>
             <p>
                 The &lt;meta&gt; tag defines metadata about an HTML document. Metadata is data about data. &lt;meta&gt; tags go inside the head element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the meta tag (See "Setting The Viewport" example below).
             </p>
-            <h3>
+            <h3 id="link">
                 &lt;link&gt;
             </h3>
             <p>
                 The &lt;link&gt; tag defines the relationship between the current document and an external resource. The &lt;link&gt; tag is most often used to link to external style sheets or to add a favicon to your website. The &lt;link&gt; element is an empty element, it contains attributes only.
             </p>
-            <h3>
+            <h3 id="title">
                 &lt;title&gt;
             </h3>
             <p>
@@ -174,7 +206,7 @@
             <p>
                 Some characters are reserved in HTML. If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags. Character entities are used to display reserved characters in HTML.
             </p>
-            <h3>
+            <h3 id="body">
                 &lt;body&gt;
             </h3>
             <p>
@@ -192,13 +224,13 @@
             <p>
                 News story
             </p>
-            <h3>
+            <h3 id="section">
                 &lt;section&gt;
             </h3>
             <p>
                 The &lt;section&gt; tag defines a section in a document.
             </p>
-            <h3>
+            <h3 id="p">
                 &lt;p&gt;
             </h3>
             <p>
@@ -207,7 +239,7 @@
             <p>
                 You can't be sure how it will be displayed. Adding space doesn't do the same in the web page.
             </p>
-            <h3>
+            <h3 id="hr">
                 &lt;hr&gt;
             </h3>
             <p>
@@ -216,7 +248,7 @@
             <p>
                 The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page:
             </p>
-            <h3>
+            <h3 id="br">
                 &lt;br&gt;
             </h3>
             <p>
@@ -225,25 +257,25 @@
             <p>
                 Use &lt;br&gt; if you want a line break (a new line) without starting a new paragraph:
             </p>
-            <h3>
+            <h3 id="pre">
                 &lt;pre&gt;
             </h3>
             <p>
                 The element &lt;pre&gt; defines preformatted text. The text inside a &lt;pre&gt; element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
             </p>
-            <h3>
+            <h3 id="div">
                 &lt;div&gt;
             </h3>
             <p>
                 The &lt;div&gt; tag defines a division or a section in an HTML document. The &lt;div&gt; tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. The &lt;div&gt; tag is easily styled by using the class or id attribute.
             </p>
-            <h3>
+            <h3 id="span">
                 &lt;span&gt;
             </h3>
             <p>
                 The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document. The &lt;span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute. The &lt;span> tag is much like the &lt;div> element, but &lt;div> is a block-level element and &lt;span> is an inline element.
             </p>
-            <h3>
+            <h3 id="a">
                 &lt;a&gt;
             </h3>
             <p>
@@ -254,7 +286,7 @@
                 <li>A visited link is underlined and purple</li>
                 <li>An active link is underlined and red</li>
             </ul>
-            <h3>
+            <h3 id="basics">
                 Basics
             </h3>
             <p>
@@ -278,13 +310,13 @@
             <p>
                 HTML can be viewed by inspecting a website.
             </p>
-            <h3>
+            <h3 id="elements">
                 Elements
             </h3>
             <p>
                 An HTML element is defined by a start tag, some content, and an end tag. Elements can be nested, but the end tag is often needed, otherwise it may display incorrectly. They can be empty, and aren't case-sensitive ( &lt;p&gt; == &lt;P&gt;).
             </p>
-            <h3>
+            <h3 id="attributes">
                 Attributes
             </h3>
             <p>
@@ -298,13 +330,13 @@
                 <li>style: colors, font, size and more</li>
                 <li>lang in &lt;html&gt;: declares the language of the page</li>
             </ul>
-            <h3>
+            <h3 id="comments">
                 Comments
             </h3>
             <p>
                 HTML comments are not displayed in the browser, but they can help document your HTML source code.
             </p>
-            <h3>
+            <h3 id="links">
                 Links
             </h3>
             <p>
@@ -328,7 +360,7 @@
             <p>
                 To use an HTML button as a link, you have to add some JavaScript code.
             </p>
-            <h3>
+            <h3 id="images">
                 Images
             </h3>
             <p>
@@ -357,7 +389,7 @@
             <p>
                 You can also use float.
             </p>
-            <h3>
+            <h3 id="head_2">
                 Head
             </h3>
             <p>
@@ -384,16 +416,16 @@
             <p>
                 &lt;base&gt; specifies the base URLs and all relative URLs in a page. Must have a href and/or target attribute present. There can only be 1 base tag.
             </p>
-            <h3 id="css">
+            <h2 id="css">
                 CSS
-            </h3>
-            <h3>
+            </h2>
+            <h3 id="syntax">
                 Syntax
             </h3>
             <p>
                 Selectors point to the element to style. The declaration block contains one or more declarations (seperated by a ";"). Each declaration includes a CSS property name and a value, separated by a colon. Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
             </p>
-            <h3>
+            <h3 id="selectors">
                 Selectors
             </h3>
             <p>
@@ -421,25 +453,25 @@
             <p>
                 The grouping selector selects all elements with the same style.
             </p>
-            <h3>
+            <h3 id="color">
                 Color
             </h3>
             <p>
                 Can be selected with names or values (for example rbg of hex code). You can edit the color of text, background and borders.
             </p>
-            <h3>
+            <h3 id="backgrounds">
                 Backgrounds
             </h3>
             <p>
                 You can color the background of specific elements. You can also change the opacity.
             </p>
-            <h3>
+            <h3 id="text">
                 Text
             </h3>
             <p>
                 Css has a lot of things that can be changed in text, for example the color of the text itself or the background color of the text.
             </p>
-            <h3>
+            <h3 id="fonts">
                 Fonts
             </h3>
             <p>
@@ -455,7 +487,7 @@
             <p>
                 The font family property can be used to specify the font of a text. Multiple fonts can be used in the font family.
             </p>
-            <h3>
+            <h3 id="links_2">
                 Links
             </h3>
             <p>
@@ -467,15 +499,12 @@
             <p>
                 Background color can also be configured.
             </p>
-            <h3>
+            <h3 id="combinators">
                 Combinators
             </h3>
             <p>
                 A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
             </p>
-            <h3>
-                Combinators
-            </h3>
             <ul>
                 <li>descendant selector (space)</li>
                 <li>child selector (>)</li>
@@ -497,7 +526,7 @@
             <p>
                 The general sibling selector selects all the next siblings.
             </p>
-            <h3>
+            <h3 id="pseudo">
                 Pseudo-classes
             </h3>
             <p>
