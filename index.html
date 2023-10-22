@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Cheat sheet</title>
     <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="animation.js"></script>
 </head>
 <body>
     <article>
@@ -12,48 +13,122 @@
         </h1>
         <div id="table-of-contents">
             <ul>
-                <li><a href="#world wide web" class="mainpoint">The World Wide Web</a></li>
-                <li><a href="#urls" class="mainpoint">URLs</a></li>
-                <li><a href="#web server" class="mainpoint">Web Servers</a></li>
-                <li><a href="#web browser" class="mainpoint">Web Browsers</a></li>
-                <li><a href="#html" class="mainpoint">HTML</a></li>
-                <li><a href="#doctype" class="subpoint">DOCTYPE</a></li>
-                <li><a href="#html_small" class ="subpoint">html</a></li>
-                <li><a href="#head" class="subpoint">head</a></li>
-                <li><a href="#meta" class="subpoint">meta</a></li>
-                <li><a href="#title" class="subpoint">title</a></li>
-                <li><a href="#body" class="subpoint">body</a></li>
-                <li><a href="#section" class="subpoint">section</a></li>
-                <li><a href="#p" class="subpoint">p</a></li>
-                <li><a href="#hr" class="subpoint">hr</a></li>
-                <li><a href="#br" class="subpoint">br</a></li>
-                <li><a href="#pre" class="subpoint">pre</a></li>
-                <li><a href="#div" class="subpoint">div</a></li>
-                <li><a href="#span" class="subpoint">span</a></li>
-                <li><a href="#a" class="subpoint">a</a></li>
-                <li><a href="#basics" class="subpoint">basics</a></li>
-                <li><a href="#elements" class="subpoint">elements</a></li>
-                <li><a href="#attributes" class="subpoint">attributes</a></li>
-                <li><a href="#comments" class="subpoint">comments</a></li>
-                <li><a href="#links" class="subpoint">links</a></li>
-                <li><a href="#images" class="subpoint">images</a></li>
-                <li><a href="#head" class="subpoint">head further explained</a></li>
-                <li><a href="#css" class="mainpoint">CSS</a></li>
-                <li><a href="#syntax" class="subpoint">syntax</a></li>
-                <li><a href="#selectors" class="subpoint">selectors</a></li>
-                <li><a href="#color" class="subpoint">colors</a></li>
-                <li><a href="#backgrounds" class="subpoint">backgrounds</a></li>
-                <li><a href="#text" class="subpoint">text</a></li>
-                <li><a href="#fonts" class="subpoint">fonts</a></li>
-                <li><a href="#links_2" class="subpoint">links further explained</a></li>
-                <li><a href="#combinators" class="subpoint">combinators</a></li>
-                <li><a href="#pseudo" class="subpoint">pseudo</a></li>
+                <li><a href="#http" class="main_point">HTTP</a></li>
+                <li><a href="#world_wide_web" class="main_point">The World Wide Web</a></li>
+                <li><a href="#urls" class="main_point">URLs</a></li>
+                <li><a href="#web_server" class="main_point">Web Servers</a></li>
+                <li><a href="#web_browser" class="main_point">Web Browsers</a></li>
+                <li><a href="#html" class="main_point">HTML</a></li>
+                <li><a href="#doctype" class="sub_point">DOCTYPE</a></li>
+                <li><a href="#html_small" class ="sub_point">html</a></li>
+                <li><a href="#head" class="sub_point">head</a></li>
+                <li><a href="#meta" class="sub_point">meta</a></li>
+                <li><a href="#title" class="sub_point">title</a></li>
+                <li><a href="#body" class="sub_point">body</a></li>
+                <li><a href="#section" class="sub_point">section</a></li>
+                <li><a href="#p" class="sub_point">p</a></li>
+                <li><a href="#hr" class="sub_point">hr</a></li>
+                <li><a href="#br" class="sub_point">br</a></li>
+                <li><a href="#pre" class="sub_point">pre</a></li>
+                <li><a href="#div" class="sub_point">div</a></li>
+                <li><a href="#span" class="sub_point">span</a></li>
+                <li><a href="#a" class="sub_point">a</a></li>
+                <li><a href="#basics" class="sub_point">basics</a></li>
+                <li><a href="#elements" class="sub_point">elements</a></li>
+                <li><a href="#attributes" class="sub_point">attributes</a></li>
+                <li><a href="#comments" class="sub_point">comments</a></li>
+                <li><a href="#links" class="sub_point">links</a></li>
+                <li><a href="#images" class="sub_point">images</a></li>
+                <li><a href="#head" class="sub_point">head further explained</a></li>
+                <li><a href="#css" class="main_point">CSS</a></li>
+                <li><a href="#syntax" class="sub_point">syntax</a></li>
+                <li><a href="#selectors" class="sub_point">selectors</a></li>
+                <li><a href="#color" class="sub_point">colors</a></li>
+                <li><a href="#backgrounds" class="sub_point">backgrounds</a></li>
+                <li><a href="#text" class="sub_point">text</a></li>
+                <li><a href="#fonts" class="sub_point">fonts</a></li>
+                <li><a href="#links_2" class="sub_point">links further explained</a></li>
+                <li><a href="#combinators" class="sub_point">combinators</a></li>
+                <li><a href="#pseudo" class="sub_point">pseudo</a></li>
+                <li><a href="#JavaScript" class = main_point>JavaScript</a></li>
             </ul>
         </div>
-        <h2 id="world wide web">
-            The World Wide Web
-        </h2>
         <section>
+            <h2 id="http">
+                HTTP
+            </h2>
+            <p>
+                HTTP is a protocol of the application layer, specifically on the 7th layer in the ISO/OSI model. It is stateless, but session data can be stored using cookies. HTTP is not limited to exchanging hypertext but can also transfer various data types. It relies on a reliable transport protocol, typically TCP (until HTTP/2) or QUIC (HTTP/3, based on UDP). Common versions include HTTP/1.0 and HTTP/1.1, with newer web browsers supporting HTTP/2.
+            </p>
+            <p>
+                HTTP communication involves two types of messages: requests from the client to the server and responses from the server to the client. Each message consists of two parts, the message header (HTTP header) containing information about the message body, such as encoding and content type, and the message body containing the actual data.
+            </p>
+            <p>
+                When a web browser activates a link to the URL http://www.example.net/infotext.html, it sends a request to the computer with the hostname www.example.net to retrieve the resource /infotext.html. The hostname www.example.net is first translated into an IP address using the DNS protocol. The HTTP-GET request is sent over TCP to the HTTP server's standard port 80.
+            </p>
+            <p>
+                If the link contains characters not allowed in the request, they are URL-encoded. Additional information, such as browser details and desired language, can be transmitted through the header in any HTTP communication. The "Host" field distinguishes different DNS names under the same IP address. It is optional under HTTP/1.0 but required under HTTP/1.1. Once the header is terminated with a blank line (or two consecutive line endings), the computer running a web server on port 80 sends an HTTP response. This response includes server header information, a blank line, and the actual content of the message, which is the content of the infotext.html file. Files are typically transmitted in page description languages like (X)HTML along with their components like images, stylesheets (CSS), scripts (JavaScript), etc., often combined by a browser for display. In principle, any file in any format can be transmitted, including dynamically generated content (e.g., CGI, SSI, JSP, PHP, or ASP.NET). Each header line is terminated by a line break &lt;CR&gt;&lt;LF&gt;. The blank line after the header consists only of &gt;CR&gt;&lt;LF&gt;, without any enclosed spaces.
+            </p>
+            <pre>
+                Response:
+
+                HTTP/1.1 200 OK
+                Server: Apache/1.3.29 (Unix) PHP/4.3.4
+                Content-Length: 123456 (Size of infotext.html in bytes)
+                Content-Language: de (per RFC 3282 and RFC 1766)
+                Connection: close
+                Content-Type: text/html
+            </pre>
+            <p>
+                The server sends an error message and an error code if the information cannot be sent for any reason. However, status codes are also used for successful requests, typically with a response of 200 OK. The exact process of this exchange (request and response) is defined in the HTTP specification.
+            </p>
+            <p>
+                Every HTTP request receives a response from the server with an HTTP status code. This code provides information on whether the request was successfully processed, or in case of an error, it guides the client, such as a browser, on where (e.g., redirection) or how (e.g., with authentication) to obtain the desired information if possible.
+            </p>
+            <pre>
+                1xx – Informational
+                The request is still being processed, despite the initial response. This intermediate response can be necessary because many clients automatically assume a transmission or processing error after a certain period (timeout) and abort with an error message.
+                2xx – Successful Operation
+                The request has been processed, and the response is sent back to the requester.
+                3xx – Redirection
+                To ensure successful processing of the request, further actions are required by the client. This occurs, for example, when a website has been redesigned by the operator, causing a requested file to be located elsewhere. The server response, including a Location header, informs the client of the new file location.
+                4xx – Client Errors
+                An error occurred in processing the request, and it is within the client's responsibility. For example, a 404 error occurs when a document is requested that does not exist on the server. A 403 error informs the client that it is not permitted to access the respective document, which could be confidential or only accessible via HTTPS.
+                5xx – Server Errors
+                An error has occurred, and the cause of the error is attributed to the server. For instance, a 501 error indicates that the server lacks the necessary functions (e.g., programs or other files) to process the request.
+            </pre>
+            <p>Requests and Responses:</p>
+            <pre>
+                HTTP Requests:
+
+                Request Method: Specifies the action to be performed, such as GET, POST, PUT, DELETE, etc.
+                Request URL: The URL or URI that the client is requesting.
+                Headers: These contain additional information about the request, including:
+                User-Agent: Information about the client application making the request.
+                Accept: The data formats (MIME types) that the client can accept.
+                Authorization: Credentials for authentication.
+                Cookies: Data sent to the server for maintaining session state.
+                Custom headers: Can include any additional information needed for the request.
+                Body: For methods like POST and PUT, the body can contain data to be sent to the server. It can be in various formats, such as JSON, XML, or form data.
+                HTTP Responses:
+
+                Status Line: Includes the HTTP version, status code, and a brief status message.
+                Headers: Similar to request headers, response headers contain additional information about the response, including:
+                Server: Information about the server software.
+                Content-Type: The MIME type of the response data.
+                Content-Length: The size of the response body in bytes.
+                Set-Cookie: Instructions for setting cookies in the client.
+                Custom headers: Can include additional information or metadata about the response.
+                Body: The response body contains the actual data being sent from the server to the client. It can be in various formats, such as HTML, JSON, XML, or binary data.
+            </pre>
+            <p>
+                These elements allow for flexible and extensible communication between clients and servers. The specific content of requests and responses depends on the purpose of the HTTP transaction, which can involve retrieving web pages, submitting form data, or interacting with web services.
+            </p>
+        </section>
+        <section>
+            <h2 id="world_wide_web">
+                The World Wide Web
+            </h2>
             <p>
                 The World Wide Web (WWW), commonly known as the Web, is an information system that enables information sharing over the Internet through user-friendly ways meant to appeal to users beyond IT specialists and hobbyists.
             </p>
@@ -79,10 +154,10 @@
                 The World Wide Web has been central to the development of the Information Age and is the primary tool billions of people use to interact on the Internet.
             </p>
         </section>
-        <h2 id="urls">
-            URLs
-        </h2>
         <section>
+            <h2 id="urls">
+                URLs
+            </h2>
             <p>
                 A URL (Uniform Resource Locator) is a reference to a resource that specifies its location on a computer network and a mechanism retrieving it.
             </p>
@@ -111,10 +186,10 @@
                 An optional query or fragment could also be: a query consists of query strings of non-hierarchical data. Its syntax is not well-defined, but by convention is most often a sequence of attribute–value pairs separated by a delimiter. A fragment contains a fragment identifier providing direction to a secondary resource, such as a section heading in an article identified by the remainder of the URI. When the primary resource is an HTML document, the fragment is often an id attribute of a specific element, and web browsers will scroll this element into view.
             </p>
         </section>
-        <h2 id="web server">
-           Web Server
-        </h2>
         <section>
+            <h2 id="web_server">
+                Web Server
+            </h2>
             <p>
                 A web server is computer software and underlying hardware that accepts requests via HTTP or its secure variant HTTPS. A user agent, commonly a web browser or web crawler, initiates communication by making a request for a web page or other resource using HTTP, and the server responds with the content of that resource or an error message. A web server can also accept and store resources sent from the user agent if configured to do so.
             </p>
@@ -128,10 +203,10 @@
                 Technologies such as REST and SOAP, which use HTTP as a basis for general computer-to-computer communication, as well as support for WebDAV extensions, have extended the application of web servers well beyond their original purpose of serving human-readable pages.
             </p>
         </section>
-        <h2 id ="web browser">
-            Web Browser
-        </h2>
         <section>
+            <h2 id ="web_browser">
+                Web Browser
+            </h2>
             <p>
                 A web browser is an application for accessing websites. When a user requests a web page from a particular website, the browser retrieves its files from a web server and then displays the page on the user's screen.
             </p>
@@ -204,7 +279,7 @@
                 <li>displays a title for the page in search-engine results</li>
             </ul>
             <p>
-                Some characters are reserved in HTML. If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags. Character entities are used to display reserved characters in HTML.
+                Some characters are reserved in HTML. If you use the less than (&lt;) or greater than (&gt;) signs in your text, the browser might mix them with tags. Character entities are used to display reserved characters in HTML.
             </p>
             <h3 id="body">
                 &lt;body&gt;
@@ -618,26 +693,35 @@
             <p>
                 A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
             </p>
-            <ul>
-                <li>descendant selector (space)</li>
-                <li>child selector (>)</li>
-                <li>adjacent sibling selector (+)</li>
-                <li>general sibling selector (~)</li>
-            </ul>
-            <p>
-                The descendant selector matches all descendants of the element.
-            </p>
-            <p>
-                Child selectors selects elements that are children of the specified one.
-            </p>
-            <p>
-                The adjacent sibling selector is used to select an element that is directly after another specific element.
-            </p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>Explanation</th>
+                </tr>
+                <tr>
+                    <td>descendant selector</td>
+                    <td> (space)</td>
+                    <td>The descendant selector matches all descendants of the element.</td>
+                </tr>
+                <tr>
+                    <td>child selector</td>
+                    <td> > </td>
+                    <td>Child selectors selects elements that are children of the specified one.</td>
+                </tr>
+                <tr>
+                    <td>adjacent sibling selector</td>
+                    <td> + </td>
+                    <td>The adjacent sibling selector is used to select an element that is directly after another specific element.</td>
+                </tr>
+                <tr>
+                    <td>general sibling selector</td>
+                    <td> ~ </td>
+                    <td>The general sibling selector selects all the next siblings.</td>
+                </tr>
+            </table>
             <p>
                 Sibling means the same parent, and adjacent means immediately following.
-            </p>
-            <p>
-                The general sibling selector selects all the next siblings.
             </p>
             <h3 id="pseudo">
                 Pseudo-classes
@@ -690,6 +774,11 @@
                   color: blue;
                 }
             </pre>
+        </section>
+        <section>
+            <h2 id="JavaScript">
+                JavaScript
+            </h2>
         </section>
     </article>
 </body>

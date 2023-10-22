@@ -8,13 +8,30 @@ a {
     text-decoration: none;
 }
 
-#table-of-contents li a.mainpoint {
+#table-of-contents li a.main_point {
     font-size: x-large;
 }
-#table-of-contents li a.subpoint {
+#table-of-contents li a.sub_point {
     margin-left: 20px;
 }
 
 h2 {
     text-align: center;
+}
+
+table th, table td {
+    border: 2px white; /* Dotted border with blue color */
+    padding: 8px;
+}
+
+.main_point, .sub_point {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.main_point:hover, .sub_point:hover {
+    background-color: #ffffff; /* New color on hover */
+    color: #000000
 }
