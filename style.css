@@ -35,3 +35,7 @@ table th, table td {
     background-color: #ffffff; /* New color on hover */
     color: #000000
 }
+
+p {
+    line-height: 120%;
+}
