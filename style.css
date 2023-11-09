@@ -1,8 +1,7 @@
-/* gilt für jedes tag oder man kann auch body benutzen */
 * {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: white;
+    background-color: #222222;
+    color: #fff2f4;
 }
 a {
     text-decoration: none;
@@ -15,8 +14,30 @@ a {
     margin-left: 20px;
 }
 
+.toc {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.toc li {
+    margin: 10px;
+}
+
+.toc a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
 h2 {
     text-align: center;
+    background-color: #333333;
 }
 
 table th, table td {
@@ -25,15 +46,15 @@ table th, table td {
 }
 
 .main_point, .sub_point {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #222222;
+    color: #fff2f4;
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .main_point:hover, .sub_point:hover {
-    background-color: #ffffff; /* New color on hover */
-    color: #000000
+    background-color: #fff2f4; /* New color on hover */
+    color: #222222
 }
 
 p {
