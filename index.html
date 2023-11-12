@@ -555,6 +555,9 @@
             <p>
                 HTML elements with no content are called empty elements. For example: the &lt;br&gt; tag defines a line break, and is an empty element without a closing tag:
             </p>
+            <p>
+                They consist of tags, may contain attributes and may be void.
+            </p>
             <h3 id="attributes">
                 Attributes
             </h3>
@@ -1048,6 +1051,61 @@
                     <td>Merge the borders of table cells so that they appear as one line</td>
                 </tr>
             </table>
+        </section>
+        <section>
+            <h2 id="id, classes">IDs and Classes</h2>
+            <h3 id="rules">CSS Rules</h3>
+            <p>Contain selectors, contain declarations, contain a property and contain a value</p>
+
+            <h3 id="classes">CSS Classes</h3>
+            <p>Differentiate two of the same element for example.</p>
+            <p>Classes are used to make an HTML element addressable from internal/external CSS.</p>
+            <p>These elements may appear more than once in a page.</p>
+            <p>Classes are used with an ".".</p>
+
+            <h3 id="id">IDs</h3>
+            <p>Used with an "#".</p>
+            <p>Make a Html element addressable from an internal/external Css</p>
+            <p>The Html element may appear only once on the page</p>
+            <p></p>
+            <p>When using an ID or Class you don't have to specify the element, you can just use .(class) or #(id).</p>
+        </section>
+        <section>
+            <h2 id="block, inline">Block and Inline elements</h2>
+            <p>Blocks take an extra line.</p>
+            <p>Examples for block: article, section, p, hl -6, div</p>
+            <p>Inline elements are in the "normal" text flow.</p>
+            <p>Examples: img, strong, em, img, span</p>
+            <p>You can edit the amount of distance to next elements with border, padding and margin</p>
+            <p>Example:</p>
+            <pre>
+                    border: 20px solid grey;
+                    padding: 100px;
+                    margin: 100px;
+            </pre>
+            <p>Inline elements only move left and right.</p>
+            <h3 id="floating_elements"></h3>
+            <p>All elements are in a "text flow"</p>
+            <p>Which means they come after each other</p>
+            <p>This may not be desirable, which we use float for</p>
+            <pre>
+                Example:
+                    &lt;img src=”…” alt=”…”/&gt;
+                    &lt;table&gt;
+                    …
+                    &lt;td&gt;e-mail&lt;/td&gt;…
+                    &lt;/table&gt;
+                    img {float: right;}
+            </pre>
+            <p>Navigation as ul </p>
+            <p>li elements float left</p>
+            <p>Any content after this would ignore the li’s</p>
+            <p>section { clear: left }</p>
+        </section>
+        <section>
+            <h2 id="debugging">Debugging</h2>
+            <p>Looking at elements the way in which the browser sees it.</p>
+            <p>This is done by inspecting the element in the browser itself.</p>
         </section>
     </article>
 </body>
