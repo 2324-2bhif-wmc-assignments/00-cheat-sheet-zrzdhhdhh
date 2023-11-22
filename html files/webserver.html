@@ -2,9 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CheatSheetWebServer</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+    <h1>Cheat Sheet Web Server</h1>
+    <table class="header">
+        <tr>
+            <th>
+            <td>
+                <a href="mainsite.html">Main</a>
+            </td>
+            <td class="mainSubject">
+                <a href="http.html">HTTP</a>
+            </td>
+            <td>
+                <a href="url.html">URLs</a>
+            </td>
+            <td>
+                <a href="webbrowser.html">Web Browser</a>
+            </td>
+            <td>
+                <a href="webserver.html">Web Server</a>
+            </td>
+            <td>
+                <a href="worldwideweb.html">World Wide Web</a>
+            </td>
+            <td>
+                <a href="html.html">HTML</a>
+            </td>
+            <td>
+                <a href="CSS.html">CSS</a>
+            </td>
+            <td>
+                <a href="javascript.html">JavaScript</a>
+            </td>
+            <th>
+        </tr>
+    </table>
+    <h2 id="web_server">
+        Web Server
+    </h2>
+    <p>
+        A web server is computer software and underlying hardware that accepts requests via HTTP or its secure
+        variant HTTPS. A user agent, commonly a web browser or web crawler, initiates communication by making a
+        request for a web page or other resource using HTTP, and the server responds with the content of that
+        resource or an error message. A web server can also accept and store resources sent from the user agent if
+        configured to do so.
+    </p>
+    <p>
+        The hardware used to run a web server can vary according to the volume of requests that it needs to handle.
+        At the low end of the range are embedded systems, such as a router that runs a small web server as its
+        configuration interface. A high-traffic Internet website might handle requests with hundreds of servers that
+        run on racks of high-speed computers.
+    </p>
+    <p>
+        A resource sent from a web server can be a pre-existing file (static content) available to the web server,
+        or it can be generated at the time of the request (dynamic content) by another program that communicates
+        with the server software. The former usually can be served faster and can be more easily cached for repeated
+        requests, while the latter supports a broader range of applications.
+    </p>
+    <p>
+        Technologies such as REST and SOAP, which use HTTP as a basis for general computer-to-computer
+        communication, as well as support for WebDAV extensions, have extended the application of web servers well
+        beyond their original purpose of serving human-readable pages.
+    </p>
+    <p>The primary role of a web server is to deliver static files (e.g., unchanging HTML or image files) or
+        dynamically generated data, such as pages customized according to a logged-in user's profile.</p>
+    <p>For a complete website, HTML pages along with linked style descriptions (CSS) and image files (JPG, PNG, GIF,
+        SVG) are typically transmitted as individual files. Each required file prompts the web browser to send a
+        separate request to the web server, which means that displaying a complex web page might require hundreds of
+        requests and server responses. A web server is capable of simultaneously delivering the contents of a
+        website to numerous different devices. The speed at which user requests are processed depends, in part, on
+        the complexity of web content. For example, dynamic web content usually demands more resources than static
+        content.</p>
+    <p>Standardized transmission protocols (HTTP, HTTPS) and network protocols like IP and TCP, typically using Port
+        80 (HTTP) and Port 443 (HTTPS), are used for transmission. Currently, HTTP/2, derived from the experimental
+        protocol SPDY, is in use.</p>
+    <p>Most websites compile content from various sources when accessed.</p>
+    <p>Scripting languages like ASP, PHP, or JSP interpret an HTML document server-side during a request and
+        transmit it from the web server to the web browser. The previously separated content and structure from
+        files and databases are processed into a document using a content management system. Websites and
+        applications such as blogs, online forums, online stores, etc., employ this technique.</p>
+    <p>Web servers can serve various functions beyond delivering static or dynamic documents:</p>
+    <ul>
+        <li><strong>Access Control:</strong> When authentication is not managed by the CMS, web servers can also
+            utilize HTTP authentication.
+        </li>
+        <li><strong>Security:</strong> HTTPS may be employed to encrypt server-client communication.</li>
+        <li><strong>Cookie Management:</strong> Web servers can handle HTTP cookies.</li>
+        <li><strong>Redirection:</strong> If no document is to be delivered, but the request should be redirected to
+            another document, it can be achieved with a rewrite engine.
+        </li>
+        <li><strong>Errors:</strong> Any errors or successes are communicated to the browser through HTTP status
+            codes and an error page.
+        </li>
+        <li><strong>Logging:</strong> Web servers typically log all requests in a log file, which can be used to
+            generate statistics on page access counts. HTTP is a stateless protocol, and therefore, associating a
+            request with a user through their IP address is generally possible, although it may not always be
+            unique, especially in LAN web accesses. Intermediate proxy servers acting as clients to the web server
+            further complicate this association.
+        </li>
+        <li><strong>Caching:</strong> With high access volumes, the resource-intensive dynamic content delivery can
+            be buffered using HTTP caching, reducing the load on web servers, scripts, and databases.
+        </li>
+        <li><strong>Configuration:</strong> Web servers are configured through specific configuration files or
+            interfaces, either globally or through standardized formats like .htaccess.
+        </li>
+    </ul>
 </body>
 </html>

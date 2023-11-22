@@ -2,9 +2,433 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CheatSheetCSS</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <h1>Cheat Sheet CSS</h1>
+    <table class="header">
+        <tr>
+            <th>
+            <td>
+                <a href="mainsite.html">Main</a>
+            </td>
+            <td class="mainSubject">
+                <a href="http.html">HTTP</a>
+            </td>
+            <td>
+                <a href="url.html">URLs</a>
+            </td>
+            <td>
+                <a href="webbrowser.html">Web Browser</a>
+            </td>
+            <td>
+                <a href="webserver.html">Web Server</a>
+            </td>
+            <td>
+                <a href="worldwideweb.html">World Wide Web</a>
+            </td>
+            <td>
+                <a href="html.html">HTML</a>
+            </td>
+            <td>
+                <a href="CSS.html">CSS</a>
+            </td>
+            <td>
+                <a href="javascript.html">JavaScript</a>
+            </td>
+            <th>
+        </tr>
+    </table>
+    <h2 id="css">
+    CSS
+    </h2>
+    <h3 id="syntax">
+        Syntax
+    </h3>
+    <p>
+        Selectors point to the element to style. The declaration block contains one or more declarations (seperated by a
+        ";"). Each declaration includes a CSS property name and a value, separated by a colon. Multiple CSS declarations are
+        separated with semicolons, and declaration blocks are surrounded by curly braces.
+    </p>
+    <h3 id="selectors">
+        Selectors
+    </h3>
+    <p>
+        Used to find or select elements to style. Can be divided into:
+    </p>
+    <ul>
+        <li>Simple selectors (based on name, id, class)</li>
+        <li>Combinator selectors (based on specific relationship</li>
+        <li>Pseudo-class selectors (based on certain state)</li>
+        <li>Pseudo-element selectors (select and style a part)</li>
+        <li>Attribute selectors (based on attribute and attribute values)</li>
+    </ul>
+    <p>
+        The element selectors select based on name.
+    </p>
+    <p>
+        The id selectors select based on id attribute. IDs are unique so it is used to select an unique element.
+    </p>
+    <p>
+        The class selector selects HTML elements with a specific class attribute.
+    </p>
+    <p>
+        The universal selector selects all elements.
+    </p>
+    <p>
+        The grouping selector selects all elements with the same style.
+    </p>
+    <h3 id="color">
+        Color
+    </h3>
+    <p>
+        Can be selected with names or values (for example rbg of hex code). You can edit the color of text, background and
+        borders.
+    </p>
+    <h3 id="backgrounds">
+        Backgrounds
+    </h3>
+    <p>
+        You can color the background of specific elements. You can also change the opacity.
+    </p>
+    <p>
+        The background-image property specifies an image to use as the background of an element.
+    </p>
+    <pre>
+        body {
+          background-image: url("paper.gif");
+        }
+    </pre>
+    <p>
+        By default, the background-image property repeats an image both horizontally and vertically.
+    </p>
+    <pre>
+        body {
+          background-image: url("gradient_bg.png");
+        }
+    </pre>
+    <p>
+        If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:
+    </p>
+    <pre>
+        body {
+          background-image: url("gradient_bg.png");
+          background-repeat: repeat-x;
+        }
+    </pre>
+    <p>
+        This can also be done with no-repeat and y.
+    </p>
+    <h3 id="text">
+        Text
+    </h3>
+    <p>
+        Css has a lot of things that can be changed in text, for example the color of the text itself or the background
+        color of the text.
+    </p>
+    <p>
+        The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned,
+        centered, or justified.
+    </p>
+    <p>
+        The text-align-last property specifies how to align the last line of a text.
+    </p>
+    <pre>
+        h1 {
+          text-align: center;
+        }
 
+        h2 {
+          text-align: left;
+        }
+
+        h3 {
+          text-align: right;
+        }
+    </pre>
+    <p>
+        The direction and unicode-bidi properties can be used to change the text direction of an element.
+    </p>
+    <p>
+        The vertical-align property sets the vertical alignment of an element.
+    </p>
+    <p>
+        The vertical-align property sets the vertical alignment of an element.
+    </p>
+    <p>
+        The text-decoration-line property is used to add a decoration line to text.
+    </p>
+    <pre>
+        h1 {
+            text-decoration-line: overline;
+        }
+
+        h2 {
+          text-decoration-line: line-through;
+        }
+
+        h3 {
+          text-decoration-line: underline;
+        }
+
+        p {
+          text-decoration-line: overline underline;
+        }
+    </pre>
+    <p>
+        The text-decoration-color property is used to set the color of the decoration line.
+    </p>
+    <p>
+        The text-decoration-style property is used to set the style of the decoration line.
+    </p>
+    <p>
+        The text-decoration-thickness property is used to set the thickness of the decoration line.
+    </p>
+    <p>
+        The text-decoration property is a shorthand property for:
+    </p>
+    <pre>
+        text-decoration-line (required)
+        text-decoration-color (optional)
+        text-decoration-style (optional)
+        text-decoration-thickness (optional)
+    </pre>
+    <p>
+        The text-transform property is used to specify uppercase and lowercase letters in a text. It can be used to turn
+        everything into uppercase or lowercase letters, or capitalize the first letter of each word.
+    </p>
+    <pre>
+        p.uppercase {
+          text-transform: uppercase;
+        }
+
+        p.lowercase {
+          text-transform: lowercase;
+        }
+
+        p.capitalize {
+          text-transform: capitalize;
+        }
+    </pre>
+    <h3 id="fonts">
+        Fonts
+    </h3>
+    <p>
+        Font can be very important. The most generic font families are:
+    </p>
+    <ul>
+        <li>Serif</li>
+        <li>Sans-Serif</li>
+        <li>Monospace</li>
+        <li>Cursive</li>
+        <li>Fantasy</li>
+    </ul>
+    <p>
+        The font family property can be used to specify the font of a text. Multiple fonts can be used in the font family.
+    </p>
+    <p>
+        In monospace every character is the same size.
+    </p>
+    <h3 id="links_2">
+        Links
+    </h3>
+    <p>
+        Links can be styled with any CSS property (e.g. color, font-family, background, etc.). They can also be edited
+        depending on the state of one.
+    </p>
+    <p>
+        Text deco can be used to remove underline.
+    </p>
+    <p>
+        Background color can also be configured.
+    </p>
+    <h3 id="combinators">
+        Combinators
+    </h3>
+    <p>
+        A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+    </p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Explanation</th>
+        </tr>
+        <tr>
+            <td>descendant selector</td>
+            <td> (space)</td>
+            <td>The descendant selector matches all descendants of the element.</td>
+        </tr>
+        <tr>
+            <td>child selector</td>
+            <td> ></td>
+            <td>Child selectors selects elements that are children of the specified one.</td>
+        </tr>
+        <tr>
+            <td>adjacent sibling selector</td>
+            <td> +</td>
+            <td>The adjacent sibling selector is used to select an element that is directly after another specific
+            element.</td>
+        </tr>
+        <tr>
+            <td>general sibling selector</td>
+            <td> ~</td>
+            <td>The general sibling selector selects all the next siblings.</td>
+        </tr>
+    </table>
+    <p>
+        Sibling means the same parent, and adjacent means immediately following.
+    </p>
+    <h3 id="pseudo">
+        Pseudo-classes
+    </h3>
+    <p>
+        Used for a special state of an element. They can be combined with HTML classes.
+    </p>
+    <pre>
+        /* unvisited link */
+        a:link {
+          color: #FF0000;
+        }
+
+        /* visited link */
+        a:visited {
+          color: #00FF00;
+        }
+
+        /* mouse over link */
+        a:hover {
+          color: #FF00FF;
+        }
+
+        /* selected link */
+        a:active {
+          color: #0000FF;
+        }
+    </pre>
+    <p>
+        An example of using the :hover pseudo-class on a &lt;div&gt; element:
+    </p>
+    <pre>
+        div:hover {
+          background-color: blue;
+        }
+    </pre>
+    <p>
+        In the following example, the selector matches the first &lt;i&gt; element in all &lt;p> elements:
+    </p>
+    <pre>
+        p i:first-child {
+          color: blue;
+        }
+    </pre>
+    <p>
+        In the following example, the selector matches all &lt;i> elements in &lt;p> elements that are the first child of
+        another element:
+    </p>
+    <pre>
+        p:first-child i {
+          color: blue;
+        }
+    </pre>
+    <h3 id="css_lists">CSS for lists</h3>
+    <table>
+        <tr>
+            <th>CSS syntax</th>
+            <th>Explanation</th>
+        </tr>
+        <tr>
+            <td>list-style-type</td>
+            <td>Sets the marker (such as a disc, character, or custom counter style) of a list item element.</td>
+        </tr>
+        <tr>
+            <td>list-style-image</td>
+            <td>Sets an image to be used as the list item marker.</td>
+        </tr>
+        <tr>
+            <td>list-style-position</td>
+            <td>Sets the position of the ::marker relative to a list item.</td>
+        </tr>
+    </table>
+    <h3 id="css_table">CSS for table cells</h3>
+    <table>
+        <tr>
+            <th>CSS Syntax</th>
+            <th>Explanation</th>
+        </tr>
+        <tr>
+            <td>border:</td>
+            <td>Size of the border and color</td>
+        </tr>
+        <tr>
+            <td>border-radius</td>
+            <td>Rounded corners with specified size</td>
+        </tr>
+        <tr>
+            <td>border-collapse</td>
+            <td>Merge the borders of table cells so that they appear as one line</td>
+        </tr>
+    </table>
+    <h2 id="id, classes">IDs and Classes</h2>
+    <h3 id="rules">CSS Rules</h3>
+    <p>Contain selectors, contain declarations, contain a property and contain a value</p>
+    <h3 id="classes">CSS Classes</h3>
+    <p>Differentiate two of the same element for example.</p>
+    <p>Classes are used to make an HTML element addressable from internal/external CSS.</p>
+    <p>These elements may appear more than once in a page.</p>
+    <p>Classes are used with an ".".</p>
+    <h3 id="id">IDs</h3>
+    <p>Used with an "#".</p>
+    <p>Make a Html element addressable from an internal/external Css</p>
+    <p>The Html element may appear only once on the page</p>
+    <p></p>
+    <p>When using an ID or Class you don't have to specify the element, you can just use .(class) or #(id).</p>
+    <h2 id="block, inline">Block and Inline elements</h2>
+    <p>Blocks take an extra line.</p>
+    <p>Examples for block: article, section, p, hl -6, div</p>
+    <p>Inline elements are in the "normal" text flow.</p>
+    <p>Examples: img, strong, em, img, span</p>
+    <p>You can edit the amount of distance to next elements with border, padding and margin</p>
+    <p>Example:</p>
+    <pre>
+            border: 20px solid grey;
+            padding: 100px;
+            margin: 100px;
+        </pre>
+    <p>Inline elements only move left and right.</p>
+    <h3 id="floating_elements"></h3>
+    <p>All elements are in a "text flow"</p>
+    <p>Which means they come after each other</p>
+    <p>This may not be desirable, which we use float for</p>
+    <pre>
+            Example:
+                &lt;img src=”…” alt=”…”/&gt;
+                &lt;table&gt;
+                …
+                &lt;td&gt;e-mail&lt;/td&gt;…
+                &lt;/table&gt;
+                img {float: right;}
+        </pre>
+    <p>Navigation as ul </p>
+    <p>li elements float left</p>
+    <p>Any content after this would ignore the li’s</p>
+    <p>section { clear: left }</p>
+    <h2 id="debugging">Debugging</h2>
+    <p>Looking at elements the way in which the browser sees it.</p>
+    <p>This is done by inspecting the element in the browser itself.</p>
+    <h2 id="margins_borders_padding">Margins, borders and padding.</h2>
+    <img src="../css_padding_border_margin.jpg" alt="Image displaying padding, border and margin." id="img_margin" />
+    <p>All of these control the distance from one element to another in HTML.</p>
+    <pre>
+        The margin can be edited with:
+            margin-top
+            margin-right
+            margin-bottom
+            margin-left
+    </pre>
+    <p>Top and bottom margin don't work with inline elements.</p>
+    <p>The type (inline, block) can be controlled with the "display" command in css.</p>
+    <p>3 Kinds: inline, block and inline-block elements.</p>
 </body>
 </html>
