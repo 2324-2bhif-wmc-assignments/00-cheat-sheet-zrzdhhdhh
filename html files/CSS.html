@@ -83,7 +83,7 @@
         Color
     </h3>
     <p>
-        Can be selected with names or values (for example rbg of hex code). You can edit the color of text, background and
+        Can be selected with names or values (for example rbg or hex code). You can edit the color of text, background and
         borders.
     </p>
     <h3 id="backgrounds">
@@ -92,6 +92,12 @@
     <p>
         You can color the background of specific elements. You can also change the opacity.
     </p>
+    <pre>
+        div {
+          background-color: green;
+          opacity: 0.3;
+        }
+    </pre>
     <p>
         The background-image property specifies an image to use as the background of an element.
     </p>
@@ -211,6 +217,21 @@
           text-transform: capitalize;
         }
     </pre>
+    <p>
+        There's also alot to be done with spacing.
+    </p>
+    <pre>
+        p {
+          text-indent: 50px;
+          letter-spacing: 5px;
+          line-height: 0.8;
+          word-spacing: 10px;
+          white-space: nowrap;
+        }
+    </pre>
+    <p>
+        The above is pretty self-explanatory.
+    </p>
     <h3 id="fonts">
         Fonts
     </h3>
@@ -225,11 +246,66 @@
         <li>Fantasy</li>
     </ul>
     <p>
-        The font family property can be used to specify the font of a text. Multiple fonts can be used in the font family.
+        The font family property can be used to specify the font of a text. Multiple fonts can be used in the font family. Should hold
+        several names as a fallback.
+    </p>
+    <p>
+        Web Safe fonts are fonts that most browsers and devices have.
+    </p>
+    <p>
+        font-style:
+    </p>
+    <pre>
+        p.normal {
+          font-style: normal;
+        }
+
+        p.italic {
+          font-style: italic;
+        }
+
+        p.oblique {
+          font-style: oblique;
+        }
+    </pre>
+    <p>
+        Also specify weight with "font-weight".
+    </p>
+    <p>
+        The font-variant property specifies if a text should be displayed in a small-caps font.
+    </p>
+    <p>
+        For example small-caps font, which turns all letters into caps but with the heigh of lowercase letters.
+    </p>
+    <p>
+        With font-size you can control size.
     </p>
     <p>
         In monospace every character is the same size.
     </p>
+    <p>
+        When choosing fonts, many things are important:
+    </p>
+    <pre>
+        1. Complement
+            Choose fonts that harmonize (not too similar or different).
+        2. Use font superfamilies
+            Font superfamilies are fonts designed to work together, so its safe to use them.
+        3.  Contrast is king
+            Two fonts that are too similar will often conflict. However, contrasts, done the right way, brings out the best in each font.
+        4.  Choose only one boss
+            Only one font should be boss, establishing an hierarchy for the fonts used.
+    </pre>
+    <p>
+        There also exists the property "font" which is a combination of many others:
+    </p>
+    <pre>
+            font-style
+            font-variant
+            font-weight
+            font-size/line-height
+            font-family
+    </pre>
     <h3 id="links_2">
         Links
     </h3>
@@ -242,6 +318,9 @@
     </p>
     <p>
         Background color can also be configured.
+    </p>
+    <p>
+        Four states: link, visited, hover, active
     </p>
     <h3 id="combinators">
         Combinators
@@ -286,6 +365,14 @@
     <p>
         Used for a special state of an element. They can be combined with HTML classes.
     </p>
+    <p>
+        Syntax:
+    </p>
+    <pre>
+        selector:pseudo-class {
+          property: value;
+        }
+    </pre>
     <pre>
         /* unvisited link */
         a:link {
@@ -360,6 +447,10 @@
         <tr>
             <td>border:</td>
             <td>Size of the border and color</td>
+        </tr>
+        <tr>
+            <td>width:</td>
+            <td>How much of the screen (percentages) the table takes up.</td>
         </tr>
         <tr>
             <td>border-radius</td>
