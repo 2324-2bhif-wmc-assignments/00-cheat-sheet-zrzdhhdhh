@@ -487,7 +487,7 @@
     <p>Looking at elements the way in which the browser sees it.</p>
     <p>This is done by inspecting the element in the browser itself.</p>
     <h2 id="margins_borders_padding">Margins, borders and padding.</h2>
-    <img src="../css_padding_border_margin.jpg" alt="Image displaying padding, border and margin." id="img_margin" />
+    <img src="../css_padding_border_margin.jpg" alt="Image displaying padding, border and margin." class="img_margin" />
     <p>All of these control the distance from one element to another in HTML.</p>
     <pre>
         The margin can be edited with:
@@ -499,5 +499,85 @@
     <p>Top and bottom margin don't work with inline elements.</p>
     <p>The type (inline, block) can be controlled with the "display" command in css.</p>
     <p>3 Kinds: inline, block and inline-block elements.</p>
+    <h2 id="gradients">
+        Gradients
+    </h2>
+    <p>
+        How to make a gradient:
+    </p>
+    <pre>
+        #gradientbox {
+            background-image:
+                linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+    </pre>
+    <p>
+        'linear-gradient' defines that the background image will be a gradient.
+    </p>
+    <p>
+        'to right' defines the direction of the gradient.
+    </p>
+    <p>
+        After are the colors of the gradient.
+    </p>
+    <img class="img_margin" src="../gradient.jpg" alt="gradient visual explanation" />
+    <pre>
+        to (left | right)
+    </pre>
+    <p>
+        '|' means or
+    </p>
+    <p>
+        You can also set it do a specific angle (using the unit 'deg')
+    </p>
+    <p>
+        the color percentage comes after the color, and it's referring to the percentage along the gradient line where a particular color is applied.
+    </p>
+    <h3 id="radial_gradient">Radial Gradients</h3>
+    <pre>
+        radial-gradient(ellipse, red, green, blue);
+    </pre>
+    <p>
+        'ellipse' specifies the shape of the gradient. This may also be something such as 'circle'.
+    </p>
+    <p>
+        You can also change the origin of the radial gradient:
+    </p>
+    <pre>
+        radial-gradient(circle at 130px (from the left side) 60px (from the top)....);
+    </pre>
+    <img class="img_margin" src="../radial_gradient.png" alt="radial gradient demonstration" />
+    <p>
+        Round corners using: border-radius: 1(unit);
+    </p>
+    <p>
+        Elements can have shadows using the command: box-shadow: 10px 10px 5px #888888
+    </p>
+    <p>
+        The first unit describes the horizontal offset, the second the vertical and the last the blur distance. The last rule changes the color.
+    </p>
+    <h2 id="transitions">Transitions</h2>
+    <p>
+        Purpose of transitions are:
+    </p>
+    <ol>
+        <li>Changes shouldn't happen immediately</li>
+        <li>Changes should be animated</li>
+    </ol>
+    <p>
+        'transition-property': which element should be affected?
+    </p>
+    <p>
+        'transition-duration': how long should the transition last?
+    </p>
+    <p>
+        'transition-timing-function property describes how the intermediate values used during a transition will be calculated
+    </p>
+    <p>
+        'transition-delay' when the transition should start.
+    </p>
+    <p>
+        'transition' can be used as a shorthand property.
+    </p>
 </body>
 </html>
