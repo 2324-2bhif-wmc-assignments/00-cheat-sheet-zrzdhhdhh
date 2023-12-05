@@ -579,5 +579,54 @@
     <p>
         'transition' can be used as a shorthand property.
     </p>
-</body>
+    <h2 id="animations">Animations</h2>
+    <p>
+        Reasons for animation:
+    </p>
+    <ul>
+        <li>Intermediate color values required</li>
+        <li>Animation should start over after finishing</li>
+        <li>Bouncing effects</li>
+    </ul>
+    <p>
+        animation-name: rainbow; (Refers to specific keyframe)
+    </p>
+    <p>
+        animation-duration: (specifies how long an animation should last)
+    </p>
+    <p>
+        animation-iteration-count: infinite; (how often to start over)
+    </p>
+    <pre>
+        @keyframes rainbow {
+            0% { background-color: red; }
+            50% { background-color: yellow; }
+            75% { background-color: blue; }
+            100% { background-color: green; }
+        }
+    </pre>
+    <h2 id="transform">Transformations</h2>
+    <p>
+        'transform':
+    </p>
+    <ul>
+        <li>Scale</li>
+        <li>Rotate</li>
+        <li>Translate (repositions an element in the horizontal and/or </li>
+        <li>Skew</li>
+    </ul>
+    <h2 id="positioning">Positioning</h2>
+    <p>
+        Static: Element appears in text flow
+    </p>
+    <p>
+        Fixed: Relative to the browser window
+    </p>
+    <p>
+        Relative: relative to its normal position
+    </p>
+    <p>
+        Absolute: relative to its first parent element which position is not static
+    </p>
+    </body>
 </html>
