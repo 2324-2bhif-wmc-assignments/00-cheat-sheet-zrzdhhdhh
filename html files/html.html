@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>CheatSheetHtml</title>
@@ -17,6 +17,7 @@
         <a href="html.html" class=header_button>HTML</a>
         <a href="CSS.html" class="header_button">CSS</a>
         <a href="javascript.html" class="header_button">JavaScript</a>
+        <a href="bootstrap.html" class="header_button">Bootstrap</a>
     </nav>
     <h2 id="html">
         HTML
@@ -86,6 +87,16 @@
             text, the browser might mix them with tags. Character entities are used to display reserved characters in
             HTML.
         </p>
+        <h3 id="intro">All in all the intro:</h3>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title>CheatSheetHtml&lt;/title&gt;
+                &lt;link href="../style.css" rel="stylesheet" type="text/css"&gt;
+            &lt;/head&gt;
+        </pre>
         <h3 id="body">
             &lt;body&gt;
         </h3>
@@ -179,7 +190,7 @@
             <li>A visited link is underlined and purple</li>
             <li>An active link is underlined and red</li>
         </ul>
-        <h3 id="basics"></h3>
+        <h3 id="basics">Basics</h3>
         <p>
             HTML documents start with the doctype declaration. The document starts with &lt;html&gt; and ends with &lt;/html&gt;.
             The visible part of HTML is in the body declaration.
@@ -406,8 +417,16 @@
                 <td>&lt;tfoot&gt;</td>
                 <td>Groups footer content in an HTML table.</td>
             </tr>
+            <tr>
+                <td>colspan</td>
+                <td>Connects for example 2 columns. Same can be done with rows &lt;rowspan>&lt;/rowspan></td>
+            </tr>
+            <tr>
+                <td>caption</td>
+                <td>Adds a caption under the table</td>
+            </tr>
         </table>
-        <h2 id="id, classes">IDs and Classes</h2>
+        <h2 id="id_classes">IDs and Classes</h2>
         <h3 id="rules">CSS Rules</h3>
         <p>Contain selectors, contain declarations, contain a property and contain a value</p>
         <h3 id="classes">CSS Classes</h3>
@@ -421,7 +440,7 @@
         <p>The Html element may appear only once on the page</p>
         <p></p>
         <p>When using an ID or Class you don't have to specify the element, you can just use .(class) or #(id).</p>
-        <h2 id="block, inline">Block and Inline elements</h2>
+        <h2 id="block_inline">Block and Inline elements</h2>
         <p>Blocks take an extra line.</p>
         <p>Examples for block: article, section, p, hl -6, div</p>
         <p>Inline elements are in the "normal" text flow.</p>
@@ -434,7 +453,7 @@
                 margin: 100px;
             </pre>
         <p>Inline elements only move left and right.</p>
-        <h3 id="floating_elements"></h3>
+        <h3 id="floating_elements">Floats</h3>
         <p>All elements are in a "text flow"</p>
         <p>Which means they come after each other</p>
         <p>This may not be desirable, which we use float for</p>

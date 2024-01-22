@@ -6,6 +6,7 @@
     <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div>
     <h1>Cheat Sheet CSS</h1>
     <nav class="header">
         <a href="mainsite.html" class=header_button>Main</a>
@@ -17,10 +18,15 @@
         <a href="html.html" class=header_button>HTML</a>
         <a href="CSS.html" class="header_button">CSS</a>
         <a href="javascript.html" class="header_button">JavaScript</a>
+        <a href="bootstrap.html" class="header_button">Bootstrap</a>
     </nav>
+</div>
+<div>
     <h2 id="css">
     CSS
     </h2>
+</div>
+<div>
     <h3 id="syntax">
         Syntax
     </h3>
@@ -29,6 +35,8 @@
         ";"). Each declaration includes a CSS property name and a value, separated by a colon. Multiple CSS declarations are
         separated with semicolons, and declaration blocks are surrounded by curly braces.
     </p>
+</div>
+<div>
     <h3 id="selectors">
         Selectors
     </h3>
@@ -57,6 +65,8 @@
     <p>
         The grouping selector selects all elements with the same style.
     </p>
+</div>
+<div>
     <h3 id="color">
         Color
     </h3>
@@ -64,6 +74,8 @@
         Can be selected with names or values (for example rbg or hex code). You can edit the color of text, background and
         borders.
     </p>
+</div>
+<div>
     <h3 id="backgrounds">
         Backgrounds
     </h3>
@@ -107,6 +119,8 @@
     <h3 id="text">
         Text
     </h3>
+</div>
+<div>
     <p>
         Css has a lot of things that can be changed in text, for example the color of the text itself or the background
         color of the text.
@@ -210,6 +224,8 @@
     <p>
         The above is pretty self-explanatory.
     </p>
+</div>
+<div>
     <h3 id="fonts">
         Fonts
     </h3>
@@ -284,6 +300,8 @@
             font-size/line-height
             font-family
     </pre>
+</div>
+<div>
     <h3 id="links_2">
         Links
     </h3>
@@ -300,6 +318,8 @@
     <p>
         Four states: link, visited, hover, active
     </p>
+</div>
+<div>
     <h3 id="combinators">
         Combinators
     </h3>
@@ -337,6 +357,8 @@
     <p>
         Sibling means the same parent, and adjacent means immediately following.
     </p>
+</div>
+<div>
     <h3 id="pseudo">
         Pseudo-classes
     </h3>
@@ -397,6 +419,8 @@
           color: blue;
         }
     </pre>
+</div>
+<div>
     <h3 id="css_lists">CSS for lists</h3>
     <table>
         <tr>
@@ -416,6 +440,8 @@
             <td>Sets the position of the ::marker relative to a list item.</td>
         </tr>
     </table>
+</div>
+<div>
     <h3 id="css_table">CSS for table cells</h3>
     <table>
         <tr>
@@ -436,24 +462,63 @@
         </tr>
         <tr>
             <td>border-collapse</td>
-            <td>Merge the borders of table cells so that they appear as one line</td>
+            <td>whether cells inside a &lt;table&gt; have shared or separate borders (seperate or collapse).</td>
+        </tr>
+        <tr>
+            <td>border-spacing</td>
+            <td>Sets the space between different cells.</td>
+        </tr>
+        <tr>
+            <td>border-style</td>
+            <td>Sets the line style for all four sides of an element's border.</td>
+        </tr>
+        <tr>
+            <td>border-width</td>
+            <td>Sets the width of the border on every side.</td>
         </tr>
     </table>
-    <h2 id="id, classes">IDs and Classes</h2>
+</div>
+<div>
+    <h2 id="id_classes">IDs and Classes</h2>
+</div>
+<div>
     <h3 id="rules">CSS Rules</h3>
-    <p>Contain selectors, contain declarations, contain a property and contain a value</p>
+    <p>
+        Contain selectors, contain declarations, contain a property and contain a value
+    </p>
+</div>
+<div>
     <h3 id="classes">CSS Classes</h3>
-    <p>Differentiate two of the same element for example.</p>
-    <p>Classes are used to make an HTML element addressable from internal/external CSS.</p>
-    <p>These elements may appear more than once in a page.</p>
-    <p>Classes are used with an ".".</p>
+    <p>
+        Differentiate two of the same element for example.
+    </p>
+    <p>
+        Classes are used to make an HTML element addressable from internal/external CSS.
+    </p>
+    <p>
+        These elements may appear more than once in a page.
+    </p>
+    <p>
+        Classes are used with an ".".
+    </p>
+</div>
+<div>
     <h3 id="id">IDs</h3>
-    <p>Used with an "#".</p>
-    <p>Make a Html element addressable from an internal/external Css</p>
-    <p>The Html element may appear only once on the page</p>
-    <p></p>
-    <p>When using an ID or Class you don't have to specify the element, you can just use .(class) or #(id).</p>
-    <h2 id="block, inline">Block and Inline elements</h2>
+    <p>
+        Used with an "#".
+    </p>
+    <p>
+        Make a Html element addressable from an internal/external Css
+    </p>
+    <p>
+        The Html element may appear only once on the page
+    </p>
+    <p>
+        When using an ID or Class you don't have to specify the element, you can just use .(class) or #(id).
+    </p>
+</div>
+<div>
+    <h2 id="block_inline">Block and Inline elements</h2>
     <p>Blocks take an extra line.</p>
     <p>Examples for block: article, section, p, hl -6, div</p>
     <p>Inline elements are in the "normal" text flow.</p>
@@ -466,6 +531,8 @@
             margin: 100px;
         </pre>
     <p>Inline elements only move left and right.</p>
+</div>
+<div>
     <h3 id="floating_elements"></h3>
     <p>All elements are in a "text flow"</p>
     <p>Which means they come after each other</p>
@@ -479,16 +546,43 @@
                 &lt;/table&gt;
                 img {float: right;}
         </pre>
-    <p>Navigation as ul </p>
-    <p>li elements float left</p>
-    <p>Any content after this would ignore the li’s</p>
-    <p>section { clear: left }</p>
-    <h2 id="debugging">Debugging</h2>
-    <p>Looking at elements the way in which the browser sees it.</p>
-    <p>This is done by inspecting the element in the browser itself.</p>
-    <h2 id="margins_borders_padding">Margins, borders and padding.</h2>
+    <p>
+        Navigation as ul
+    </p>
+    <p>
+        li elements float left
+    </p>
+    <p>
+        Any content after this would ignore the li’s
+    </p>
+    <p>
+        section { clear: left }
+    </p>
+    <p>
+        The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it.
+    </p>
+</div>
+<div>
+    <h2 id="debugging">
+        Debugging
+    </h2>
+</div>
+<div>
+    <p>
+        Looking at elements the way in which the browser sees it.
+    </p>
+    <p>
+        This is done by inspecting the element in the browser itself.
+    </p>
+</div>
+<div>
+    <h2 id="margins_borders_padding">
+        Margins, borders and padding.
+    </h2>
     <img src="../css_padding_border_margin.jpg" alt="Image displaying padding, border and margin." class="img_margin" />
-    <p>All of these control the distance from one element to another in HTML.</p>
+    <p>
+        All of these control the distance from one element to another in HTML.
+    </p>
     <pre>
         The margin can be edited with:
             margin-top
@@ -499,6 +593,8 @@
     <p>Top and bottom margin don't work with inline elements.</p>
     <p>The type (inline, block) can be controlled with the "display" command in css.</p>
     <p>3 Kinds: inline, block and inline-block elements.</p>
+</div>
+<div>
     <h2 id="gradients">
         Gradients
     </h2>
@@ -533,6 +629,8 @@
     <p>
         the color percentage comes after the color, and it's referring to the percentage along the gradient line where a particular color is applied.
     </p>
+</div>
+<div>
     <h3 id="radial_gradient">Radial Gradients</h3>
     <pre>
         radial-gradient(ellipse, red, green, blue);
@@ -551,11 +649,13 @@
         Round corners using: border-radius: 1(unit);
     </p>
     <p>
-        Elements can have shadows using the command: box-shadow: 10px 10px 5px #888888
+        Elements can have shadows using the command: box-shadow: 10px 20px 5px #888888
     </p>
     <p>
         The first unit describes the horizontal offset, the second the vertical and the last the blur distance. The last rule changes the color.
     </p>
+</div>
+<div>
     <h2 id="transitions">Transitions</h2>
     <p>
         Purpose of transitions are:
@@ -579,6 +679,8 @@
     <p>
         'transition' can be used as a shorthand property.
     </p>
+</div>
+<div>
     <h2 id="animations">Animations</h2>
     <p>
         Reasons for animation:
@@ -597,6 +699,15 @@
     <p>
         animation-iteration-count: infinite; (how often to start over)
     </p>
+    <p>
+        'animation-direction':
+    </p>
+    <ul>
+        <li>Reverse</li>
+        <li>Normal</li>
+        <li>Alternate (changes between normal and reverse)</li>
+        <li>Alternate-reverse</li>
+    </ul>
     <pre>
         @keyframes rainbow {
             0% { background-color: red; }
@@ -605,6 +716,8 @@
             100% { background-color: green; }
         }
     </pre>
+</div>
+<div>
     <h2 id="transform">Transformations</h2>
     <p>
         'transform':
@@ -615,6 +728,8 @@
         <li>Translate (repositions an element in the horizontal and/or </li>
         <li>Skew</li>
     </ul>
+</div>
+<div>
     <h2 id="positioning">Positioning</h2>
     <p>
         Static: Element appears in text flow
@@ -628,5 +743,71 @@
     <p>
         Absolute: relative to its first parent element which position is not static
     </p>
+</div>
+<div>
+    <h2 id="keyframes">
+        Keyframes
+    </h2>
+    <p>
+        The @keyframes rule specifies the animation code.
+    </p>
+    <p>
+        The animation is created by gradually changing from one set of CSS styles to another.
+    </p>
+    <p>
+        During the animation, you can change the set of CSS styles many times.
+    </p>
+    <p>
+        Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.
+    </p>
+    <pre>
+        Example:
+            @keyframes mymove {
+              0%   {top: 0px;}
+              25%  {top: 200px;}
+              50%  {top: 100px;}
+              75%  {top: 200px;}
+              100% {top: 0px;}
+            }
+    </pre>
+    <p>
+        Usage: animation: mymove 5s infinite;
+    </p>
+    <p>
+        Change things such as:
+    </p>
+    <ol>
+        <li>animation-duration</li>
+        <li>animation-iteration-count: how many times animation repeats.</li>
+        <li>animation-direction
+            <ol>
+                <li>normal - The animation is played as normal (forwards). This is default</li>
+                <li>reverse - The animation is played in reverse direction (backwards)</li>
+                <li>alternate - The animation is played forwards first, then backwards</li>
+                <li>alternate-reverse - The animation is played backwards first, then forwards</li>
+            </ol>
+        </li>
+        <li>animation-timing-function
+            <ol>
+                <li>ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)</li>
+                <li>linear - Specifies an animation with the same speed from start to end</li>
+                <li>ease-in - Specifies an animation with a slow start</li>
+                <li>ease-out - Specifies an animation with a slow end</li>
+                <li>ease-in-out - Specifies an animation with a slow start and end</li>
+                <li>cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function</li>
+            </ol>
+        </li>
+        <li>animation-fill-mode
+            <ol>
+                <li>none - Default value. Animation will not apply any styles to the element before or after it is executing</li>
+                <li>forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)</li>
+                <li>backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period</li>
+                <li>both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions</li>
+            </ol>
+        </li>
+        <li>animation-play-state: Paused or running</li>
+        <li>animation-timing-function: Specifies the speed curve of the animation</li>
+    </ol>
+</div>
     </body>
 </html>
