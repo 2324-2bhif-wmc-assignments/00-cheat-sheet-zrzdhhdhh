@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>CheatSheetHtml</title>
     <link href="../style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-<h1>Cheat Sheet Bootstrap</h1>
 <nav class="header">
     <a href="mainsite.html" class=header_button>Main</a>
     <a href="http.html" class=header_button>HTTP</a>
@@ -20,223 +21,339 @@
     <a href="bootstrap.html" class="header_button">Bootstrap</a>
 </nav>
 <div>
-    <h2 id="bootstrap">Bootstrap</h2>
-    <p>
-        Bootstrap uses predefined classes, meaning you have to use a class in the right elements
-    </p>
-    <p>
-        Include the following to function:
-    </p>
-    <p>
-        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;
-    </p>
-    <p>
-        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"&gt;&lt;/script&gt;
-    </p>
-</div>
-<div>
-    <h2 id="containers">
-        Containers
-    </h2>
-    <p>
-        Adapts the content to the size of the browser window.
-    </p>
-</div>
-<div>
-    <h2 id="typography">
-        Typography
-    </h2>
-</div>
-<div>
-    <h3 id="headings">
-        Headings
-    </h3>
-    <p>
-        For headings the class page-header can be used.
-    </p>
-    <h3 id="highlight">
-        Highlight Text
-    </h3>
-    <p>
-        Lead for standing out, mark for highlighting, del for crossing out and u for underlining.
-    </p>
-</div>
-<div>
-    <h3 id="align_and_transform">
-        Alignment & Transformation
-    </h3>
-    <p>
-        text-left, center, right and justify.
-    </p>
-    <p>
-        text-lowercase, uppercase and capitalize
-    </p>
-</div>
-<div>
-    <h2 id="floating">
-        Floating
-    </h2>
-    <p>
-        Float end: float to the right.
-    </p>
-    <p>
-        Float start: float to the left.
-    </p>
-    <p>
-        Float none: stops floating.
-    </p>
-</div>
-<div>
-    <h2 id="blockquotes">
-        Blockquotes
-    </h2>
-    <p>
-        If you want to add a quote you can use the blockquote HTML tag. Use classes blockquote or blockquote-reverse to make it pretty.
-    </p>
-    <pre>
-        &lt;blockquote class="blockquote-reverse">
-            &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p>
-            &lt;footer>Quote by &lt;cite title="John Doe">John Doe&lt;/cite>&lt;/footer>
-        &lt;/blockquote>
-    </pre>
-</div>
-<div>
-    <h2 id="lists">
-        Lists
-    </h2>
-    <p>
-        To remove any list styling (padding and bullets) use list-unstyled.
-    </p>
-    <p>
-        Inline lists with list-inline.
-    </p>
-</div>
-<div>
-    <h2 id="context_colors">
-        Contextual colors
-    </h2>
-    <ul>
-        <li>text-primary: blue.</li>
-        <li>text-success: green.</li>
-        <li>text-info: green.</li>
-        <li>text-warning: brown.</li>
-        <li>text-danger: red.</li>
-        <li>text-muted: gray.</li>
-    </ul>
-    <p>
-        Replace ‘text’ with ‘bg’ to edit the background.
-    </p>
-</div>
-<div>
-    <h2 id="buttons">
-        Buttons
-    </h2>
-    <p>
-        Every button implemented needs the following format: class=”btn {btn style you want}”
-    </p>
-    <pre>
-        Basic buttons
-        &lt;button class="btn btn-default">Button&lt;/button>
-        Anchors:
-        &lt;a href=”…” class=”btn btn-default” role=”button”>Link&lt;/a>
-        Buttons with a input:
-        &lt;input type="submit" class="btn btn-default" value="Submit">
-    </pre>
-</div>
-<div>
-    <h2 id="Tables">Tables</h2>
-    <p>Similar to buttons, use class="table {rest&hellip;}".</p>
-    <p><strong>Table-striped</strong> strips every second row.</p>
-    <p><strong>Table-bordered</strong> adds a border on all sides of a cell.</p>
-    <p><strong>Table-hover</strong> makes it so that the row you’re hovering changes colors.</p>
-    <p><strong>Table-condensed</strong> adjusts the content of the table when changing the size of the window.</p>
-
-    <div></div>
-
-    <h2 id="List-Groups">List Groups</h2>
-    <p>List groups are a flexible and powerful component for displaying a series of content.</p>
-    <p>Add <strong>active</strong> or <strong>disabled</strong> to make it appear as so.</p>
-
-    <div></div>
-
-    <h2 id="Links-and-Buttons">Links and Buttons</h2>
-    <p>Use anchors &amp; buttons to create actionable list group items with hover, disabled, and active states by adding list-group-item-action.</p>
-
-    <div></div>
-
-    <h2 id="Cards">Cards</h2>
-    <p>A card is a content container. Includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components.</p>
-    <p>Cards are made with an outside div with the class card,</p>
-    <ul>
-        <li>card-img-top: class that can be applied to an image that will appear at the top of the card</li>
-        <li>card-body: applied to a div and contains everything in the body</li>
-        <li>card-title: applied to a title tag (h1, h2 usw) and</li>
-        <li>card-text: applied to a paragraph or div or whatever and contains the text of the card</li>
-    </ul>
-
-    <div></div>
-
-    <h2 id="Grids-Page-Layout">Grids - Page Layout</h2>
-    <p>A grid can have 12 columns. Rows are made with a div with the class row. Each column must have a col-*- class.</p>
-    <p>The first star is replaced by size, eg:</p>
-    <p>Nothing for phones, sm for tablets, md for desktops, lg for big desktops, and xl for even larger displays.</p>
-    <p>The second star represents the number of columns to be used from the grid.</p>
-    <p>Basic Structure of a Bootstrap Grid</p>
-    <p>To create the layout you want, create a container. Next, create a row (&lt;div class="row"&gt;). Then, add the desired number of columns (tags with appropriate col-*- classes). Note that numbers in .col-*-* should always add up to 12 for each row.</p>
-
-    <div></div>
-
-    <h2 id="Images-and-Figures">Images & Figures</h2>
-    <p><strong>Responsive Images</strong></p>
-    <p>Images in Bootstrap are made responsive with the class img-fluid.</p>
-    <p>&lt;img src="picture of your choice" class="img-responsive" alt="Responsive image"&gt;</p>
-    <p><strong>Rounded Corners</strong></p>
-    <p>The img-rounded class adds rounded corners to an image.</p>
-    <p>&lt;img src="picture of your choice" class="img-rounded" alt="pic with rounded corners"&gt;</p>
-    <p><strong>Circle</strong></p>
-    <p>The img-circle class shapes the image to a circle.</p>
-    <p>&lt;img src="picture of your choice" class="img-circle" alt="pic with rounded corners" width="304" height="236"&gt;</p>
-
-    <div></div>
-
-    <h2 id="Carousel">Carousel</h2>
-    <p>Creates a slideshow.</p>
-    <p>Carousels don’t automatically normalize slide dimensions =  you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they’re not explicitly required.</p>
-    <p>You must add the .active class to one of the slides; otherwise, the carousel will not be visible. Also, be sure to set a unique id on the .carousel for optional controls, especially if you’re using multiple carousels on a single page. Control and indicator elements must have a data-bs-target attribute (or href for links) that matches the id of the .carousel element.</p>
-    <p>Also, able to add indicators, which say on which slide one is on.</p>
-    <p>To make a carousel, first make an outside div. This needs the class carousel slide and the data ride carousel. Then make a carousel inner, in which you make divs for different images and captions. Anchors with the class carousel-control-prev or next can be used to control which slide you are on, with a span with the class carousel-control-prev-icon. Indicators are made with a list with the data-slide-to attribute. One needs to be set to active.</p>
-    <p>Also, able to add a fade with carousel-fade in the first div.</p>
-
-    <div></div>
-
-    <h2 id="Alerts">Alerts</h2>
-    <p>&lt;div class="alert alert-{context-color}" role="alert"&gt;</p>
-    <p>Also use alert-link in anchors.</p>
-
-    <div></div>
-
-    <h2 id="Badges">Badges</h2>
-    <p>The following code adds a rounded box with a 4 in it:</p>
-    <p>&lt;button type="button" class="btn btn-primary"&gt;Notifications &lt;span class="badge text-bg-secondary"&gt;4&lt;/span&gt;&lt;/button&gt;</p>
-    <p>Positioning can be helpful here.</p>
-
-    <div></div>
-
-    <h2 id="Dropdowns">Dropdowns</h2>
-    <p>Surround everything in a div with the class btn-group.</p>
-    <p>Make a button with the following things: type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"</p>
-    <p>The data-bs-toggle is what makes the button drop down.</p>
-    <p>Then make a list with each of the dropdown items, with the class dropdown-item. Use dropdown-divider to divide two dropdown items.</p>
-
-    <div></div>
-
-    <h2 id="Pagination">Pagination</h2>
-    <p>Rounded box with multiple boxes of context inside. Declare a list with a pagination and then the list items with page-items. Then make an anchor or button inside the lis.</p>
-
-    <div></div>
-
-    <h2 id="Forms">Forms</h2>
-    <p>Mostly use &lt;input&gt;. Use the class form-control and have a placeholder for placeholder text. One could also have a textarea, with a configurable number of rows. Also use form-label and form-text. One could also use readonly.</p>
+    <div>
+        <h1>Cheat Sheet Bootstrap</h1>
+    </div>
+    <div>
+        <h2 id="bootstrap">Bootstrap</h2>
+        <p>
+            Bootstrap uses predefined classes, meaning you have to use a class in the right elements
+        </p>
+        <p>
+            Include the following to function:
+        </p>
+        <p>
+            &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;
+        </p>
+        <p>
+            &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"&gt;&lt;/script&gt;
+        </p>
+    </div>
+    <div>
+        <h2 id="containers">
+            Containers
+        </h2>
+        <p>
+            Adapts the content to the size of the browser window.
+        </p>
+    </div>
+    <div>
+        <h2 id="typography">
+            Typography
+        </h2>
+    </div>
+    <div>
+        <h3 id="headings">
+            Headings
+        </h3>
+        <p>
+            For headings the class page-header can be used.
+        </p>
+        <h3 id="highlight">
+            Highlight Text
+        </h3>
+        <p>
+            Lead for standing out, mark for highlighting, del for crossing out and u for underlining.
+        </p>
+    </div>
+    <div>
+        <h3 id="align_and_transform">
+            Alignment & Transformation
+        </h3>
+        <p>
+            text-left, center, right and justify.
+        </p>
+        <p>
+            text-lowercase, uppercase and capitalize
+        </p>
+    </div>
+    <div>
+        <h2 id="floating">
+            Floating
+        </h2>
+        <p>
+            Float end: float to the right.
+        </p>
+        <p>
+            Float start: float to the left.
+        </p>
+        <p>
+            Float none: stops floating.
+        </p>
+    </div>
+    <div>
+        <h2 id="blockquotes">
+            Blockquotes
+        </h2>
+        <p>
+            If you want to add a quote you can use the blockquote HTML tag. Use classes blockquote or blockquote-reverse
+            to make it pretty.
+        </p>
+        <pre>
+            &lt;blockquote class="blockquote-reverse">
+                &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p>
+                &lt;footer>Quote by &lt;cite title="John Doe">John Doe&lt;/cite>&lt;/footer>
+            &lt;/blockquote>
+        </pre>
+    </div>
+    <div>
+        <h2 id="lists">
+            Lists
+        </h2>
+        <p>
+            To remove any list styling (padding and bullets) use list-unstyled.
+        </p>
+        <p>
+            Inline lists with list-inline.
+        </p>
+    </div>
+    <div>
+        <h2 id="context_colors">
+            Contextual colors
+        </h2>
+        <ul>
+            <li>text-primary: blue.</li>
+            <li>text-success: green.</li>
+            <li>text-info: green.</li>
+            <li>text-warning: brown.</li>
+            <li>text-danger: red.</li>
+            <li>text-muted: gray.</li>
+        </ul>
+        <p>
+            Replace ‘text’ with ‘bg’ to edit the background.
+        </p>
+    </div>
+    <div>
+        <h2 id="buttons">
+            Buttons
+        </h2>
+        <p>
+            Every button implemented needs the following format: class=”btn {btn style you want}”
+        </p>
+        <pre>
+            Basic buttons
+            &lt;button class="btn btn-default">Button&lt;/button>
+            Anchors:
+            &lt;a href=”…” class=”btn btn-default” role=”button”>Link&lt;/a>
+            Buttons with a input:
+            &lt;input type="submit" class="btn btn-default" value="Submit">
+        </pre>
+    </div>
+    <div>
+        <h2 id="Tables">
+            Tables
+        </h2>
+        <p>
+            Similar to buttons, use class="table {rest}".
+        </p>
+        <p>
+            Table-striped strips every second row.
+        </p>
+        <p>
+            Table-bordered adds a border on all sides of a cell.
+        </p>
+        <p>
+            Table-hover makes it so that the row you’re hovering changes colors.
+        </p>
+        <p>
+            Table-condensed adjusts the content of the table when changing the size of the window.
+        </p>
+    </div>
+    <div>
+        <h2 id="List-Groups">
+            List Groups
+        </h2>
+        <p>
+            List groups are a flexible and powerful component for displaying a series of content.
+        </p>
+        <p>
+            Add active or disabled to make it appear as so.
+        </p>
+    </div>
+    <div>
+        <h2 id="Links-and-Buttons">
+            Links and Buttons
+        </h2>
+        <p>
+            Use anchor buttons to create actionable list group items with hover, disabled, and active states by adding
+            list-group-item-action.
+        </p>
+    </div>
+    <div>
+        <h2 id="Cards">
+            Cards
+        </h2>
+        <p>
+            A card is a content container. Includes options for headers and footers, a wide variety of content,
+            contextual background colors, and powerful display options. Built with flexbox, they offer easy alignment
+            and mix well with other Bootstrap components.
+        </p>
+        <p>
+            Cards are made with an outside div with the class card.
+        </p>
+        <ul>
+            <li>card-img-top: class that can be applied to an image that will appear at the top of the card</li>
+            <li>card-body: applied to a div and contains everything in the body</li>
+            <li>card-title: applied to a title tag (h1, h2 usw) and</li>
+            <li>card-text: applied to a paragraph or div or whatever and contains the text of the card</li>
+        </ul>
+    </div>
+    <div>
+        <h2 id="Grids-Page-Layout">
+            Grids - Page Layout
+        </h2>
+        <p>
+            A grid can have 12 columns. Rows are made with a div with the class row. Each column must have a col-*-
+            class.
+        </p>
+        <p>
+            The first star is replaced by size, eg:
+        </p>
+        <p>
+            Nothing for phones, sm for tablets, md for desktops, lg for big desktops, and xl for even larger displays.
+        </p>
+        <p>
+            The second star represents the number of columns to be used from the grid.
+        </p>
+        <p>
+            Basic Structure of a Bootstrap Grid
+        </p>
+        <p>
+            To create the layout you want, create a container. Next, create a row (&lt;div class="row"&gt;). Then, add
+            the desired number of columns (tags with appropriate col-*- classes). Note that numbers in .col-*-* should
+            always add up to 12 for each row.
+        </p>
+    </div>
+    <div>
+        <h2 id="Images-and-Figures">
+            Images & Figures
+        </h2>
+        <p>
+            Responsive Images
+        </p>
+        <p>
+            Images in Bootstrap are made responsive with the class img-fluid.
+        </p>
+        <p>
+            &lt;img src="picture of your choice" class="img-responsive" alt="Responsive image"&gt;
+        </p>
+        <p>
+            Rounded Corners
+        </p>
+        <p>
+            The img-rounded class adds rounded corners to an image.
+        </p>
+        <p>
+            &lt;img src="picture of your choice" class="img-rounded" alt="pic with rounded corners"&gt;
+        </p>
+        <p>
+            Circle
+        </p>
+        <p>
+            The img-circle class shapes the image to a circle.
+        </p>
+        <p>
+            &lt;img src="picture of your choice" class="img-circle" alt="pic with rounded corners" width="304"
+            height="236"&gt;
+        </p>
+    </div>
+    <div>
+        <h2 id="Carousel">
+            Carousel
+        </h2>
+        <p>
+            Creates a slideshow.</p>
+        <p>
+            Carousels don’t automatically normalize slide dimensions = you may need to use additional utilities or
+            custom styles to appropriately size content. While carousels support previous/next controls and indicators,
+            they’re not explicitly required.
+        </p>
+        <p>
+            You must add the .active class to one of the slides; otherwise, the carousel will not be visible. Also, be
+            sure to set a unique id on the .carousel for optional controls, especially if you’re using multiple
+            carousels on a single page. Control and indicator elements must have a data-bs-target attribute (or href for
+            links) that matches the id of the .carousel element.
+        </p>
+        <p>
+            Also, able to add indicators, which say on which slide one is on.
+        </p>
+        <p>
+            To make a carousel, first make an outside div. This needs the class carousel slide and the data ride
+            carousel. Then make a carousel inner, in which you make divs for different images and captions. Anchors with
+            the class carousel-control-prev or next can be used to control which slide you are on, with a span with the
+            class carousel-control-prev-icon. Indicators are made with a list with the data-slide-to attribute. One
+            needs to be set to active.
+        </p>
+        <p>
+            Also, able to add a fade with carousel-fade in the first div.
+        </p>
+    </div>
+    <div>
+        <h2 id="Alerts">
+            Alerts
+        </h2>
+        <p>
+            &lt;div class="alert alert-{context-color}" role="alert"&gt;
+        </p>
+        <p>
+            Also use alert-link in anchors.
+        </p>
+    </div>
+    <div>
+        <h2 id="Badges">
+            Badges
+        </h2>
+        <p>
+            The following code adds a rounded box with a 4 in it:
+        </p>
+        <p>
+            &lt;button type="button" class="btn btn-primary"&gt;Notifications &lt;span class="badge text-bg-secondary"&gt;4&lt;/span&gt;&lt;/button&gt;
+        </p>
+        <p>
+            Positioning can be helpful here.
+        </p>
+    </div>
+    <div>
+        <h2 id="Dropdowns">
+            Dropdowns
+        </h2>
+        <p>
+            Surround everything in a div with the class btn-group.</p>
+        <p>
+            Make a button with the following things: type="button" class="btn btn-danger dropdown-toggle"
+            data-bs-toggle="dropdown"</p>
+        <p>
+            The data-bs-toggle is what makes the button drop down.
+        </p>
+        <p>Then make a list with each of the dropdown items, with the class dropdown-item. Use dropdown-divider to
+            divide two dropdown items.</p>
+    </div>
+    <div>
+        <h2 id="Pagination">Pagination</h2>
+        <p>Rounded box with multiple boxes of context inside. Declare a list with a pagination and then the list items
+            with page-items. Then make an anchor or button inside the lis.</p>
+    </div>
+    <div>
+        <h2 id="Forms">Forms</h2>
+        <p>Mostly use &lt;input&gt;. Use the class form-control and have a placeholder for placeholder text. One could
+            also have a textarea, with a configurable number of rows. Also use form-label and form-text. One could also
+            use readonly.</p>
+    </div>
 </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </html>

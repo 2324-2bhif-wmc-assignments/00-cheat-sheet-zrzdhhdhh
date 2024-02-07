@@ -4,135 +4,260 @@
     <meta charset="UTF-8">
     <title>CheatSheetCSS</title>
     <link href="../style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+        <div class="nav-item">
+            <a class="nav-link" href="mainsite.html" role="button">
+                Main
+            </a>
+        </div>
+        <div class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="html.html" role="button" data-toggle="dropdown">
+                Web
+            </a>
+            <div class="dropdown-menu">
+                <a href="web.html/#web_browser" class="dropdown-item">Web browser</a>
+                <a href="web.html/#web_server" class="dropdown-item">Web server</a>
+                <a href="web.html/#world_wide_web" class="dropdown-item">World Wide Web</a>
+                <a href="web.html/#http" class="dropdown-item">HTTP</a>
+                <a href="web.html/#urls" class="dropdown-item">urls</a>
+            </div>
+        </div>
+        <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="html.html" role="button" data-toggle="dropdown">
+                HTML
+            </a>
+            <div class="dropdown-menu">
+                <a href="html.html/#doctype" class="dropdown-item">DOCTYPE</a>
+                <a href="html.html/#html_small" class="dropdown-item">html</a>
+                <a href="html.html/#head" class="dropdown-item">head</a>
+                <a href="html.html/#meta" class="dropdown-item">meta</a>
+                <a href="html.html/#link" class="dropdown-item">link</a>
+                <a href="html.html/#title" class="dropdown-item">title</a>
+                <a href="html.html/#intro" class="dropdown-item">intro</a>
+                <a href="html.html/#body" class="dropdown-item">body</a>
+                <a href="html.html/#section" class="dropdown-item">section</a>
+                <a href="html.html/#p" class="dropdown-item">p</a>
+                <a href="html.html/#hr" class="dropdown-item">hr</a>
+                <a href="html.html/#br" class="dropdown-item">br</a>
+                <a href="html.html/#pre" class="dropdown-item">pre</a>
+                <a href="html.html/#div" class="dropdown-item">div</a>
+                <a href="html.html/#span" class="dropdown-item">span</a>
+                <a href="html.html/#a" class="dropdown-item">a</a>
+                <a href="html.html/#basics" class="dropdown-item">basics</a>
+                <a href="html.html/#elements" class="dropdown-item">elements</a>
+                <a href="html.html/#attributes" class="dropdown-item">attributes</a>
+                <a href="html.html/#comments" class="dropdown-item">comments</a>
+                <a href="html.html/#links" class="dropdown-item">links</a>
+                <a href="html.html/#images" class="dropdown-item">images</a>
+                <a href="html.html/#head_2" class="dropdown-item">head_2</a>
+                <a href="html.html/#html_lists" class="dropdown-item">html_lists</a>
+                <a href="html.html/#html_table" class="dropdown-item">html_table</a>
+                <a href="html.html/#id_classes" class="dropdown-item">id_classes</a>
+                <a href="html.html/#rules" class="dropdown-item">rules</a>
+                <a href="html.html/#classes" class="dropdown-item">classes</a>
+                <a href="html.html/#id" class="dropdown-item">id</a>
+                <a href="html.html/#block_inline" class="dropdown-item">block_inline</a>
+                <a href="html.html/#floating_elements" class="dropdown-item">floating_elements</a>
+                <a href="html.html/#debugging" class="dropdown-item">debugging</a>
+            </div>
+        </div>
+        <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="CSS.html" role="button" data-toggle="dropdown">
+                CSS
+            </a>
+            <div class="dropdown-menu">
+                <a href="CSS.html/#css" class="dropdown-item">CSS</a>
+                <a href="CSS.html/#syntax" class="dropdown-item">Syntax</a>
+                <a href="CSS.html/#selectors" class="dropdown-item">Selectors</a>
+                <a href="CSS.html/#color" class="dropdown-item">Color</a>
+                <a href="CSS.html/#backgrounds" class="dropdown-item">Backgrounds</a>
+                <a href="CSS.html/#text" class="dropdown-item">Text</a>
+                <a href="CSS.html/#fonts" class="dropdown-item">Fonts</a>
+                <a href="CSS.html/#links_2" class="dropdown-item">Links</a>
+                <a href="CSS.html/#combinators" class="dropdown-item">Combinators</a>
+                <a href="CSS.html/#pseudo" class="dropdown-item">Pseudo-classes</a>
+                <a href="CSS.html/#css_lists" class="dropdown-item">CSS for lists</a>
+                <a href="CSS.html/#css_table" class="dropdown-item">CSS for table cells</a>
+                <a href="CSS.html/#id_classes" class="dropdown-item">IDs and Classes</a>
+                <a href="CSS.html/#rules" class="dropdown-item">CSS Rules</a>
+                <a href="CSS.html/#classes" class="dropdown-item">CSS Classes</a>
+                <a href="CSS.html/#id" class="dropdown-item">IDs</a>
+                <a href="CSS.html/#block_inline" class="dropdown-item">Block and Inline elements</a>
+                <a href="CSS.html/#floating_elements" class="dropdown-item">Floating Elements</a>
+                <a href="CSS.html/#debugging" class="dropdown-item">Debugging</a>
+                <a href="CSS.html/#margins_borders_padding" class="dropdown-item">Margins, Borders, and Padding</a>
+                <a href="CSS.html/#gradients" class="dropdown-item">Gradients</a>
+                <a href="CSS.html/#radial_gradient" class="dropdown-item">Radial Gradients</a>
+                <a href="CSS.html/#transitions" class="dropdown-item">Transitions</a>
+                <a href="CSS.html/#animations" class="dropdown-item">Animations</a>
+                <a href="CSS.html/#transform" class="dropdown-item">Transformations</a>
+                <a href="CSS.html/#positioning" class="dropdown-item">Positioning</a>
+                <a href="CSS.html/#keyframes" class="dropdown-item">Keyframes</a>
+            </div>
+        </div>
+        <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="bootstrap.html" role="button" data-toggle="dropdown">
+                Bootstrap
+            </a>
+            <div class="dropdown-menu">
+                <a href="bootstrap.html/#bootstrap" class="dropdown-item">Bootstrap</a>
+                <a href="bootstrap.html/#containers" class="dropdown-item">Containers</a>
+                <a href="bootstrap.html/#typography" class="dropdown-item">Typography</a>
+                <a href="bootstrap.html/#headings" class="dropdown-item">Headings</a>
+                <a href="bootstrap.html/#highlight" class="dropdown-item">Highlight Text</a>
+                <a href="bootstrap.html/#align_and_transform" class="dropdown-item">Alignment & Transformation</a>
+                <a href="bootstrap.html/#floating" class="dropdown-item">Floating</a>
+                <a href="bootstrap.html/#blockquotes" class="dropdown-item">Blockquotes</a>
+                <a href="bootstrap.html/#lists" class="dropdown-item">Lists</a>
+                <a href="bootstrap.html/#context_colors" class="dropdown-item">Contextual colors</a>
+                <a href="bootstrap.html/#buttons" class="dropdown-item">Buttons</a>
+                <a href="bootstrap.html/#Tables" class="dropdown-item">Tables</a>
+                <a href="bootstrap.html/#List-Groups" class="dropdown-item">List Groups</a>
+                <a href="bootstrap.html/#Links-and-Buttons" class="dropdown-item">Links and Buttons</a>
+                <a href="bootstrap.html/#Cards" class="dropdown-item">Cards</a>
+                <a href="bootstrap.html/#Grids-Page-Layout" class="dropdown-item">Grids - Page Layout</a>
+                <a href="bootstrap.html/#Images-and-Figures" class="dropdown-item">Images & Figures</a>
+                <a href="bootstrap.html/#Carousel" class="dropdown-item">Carousel</a>
+                <a href="bootstrap.html/#Alerts" class="dropdown-item">Alerts</a>
+                <a href="bootstrap.html/#Badges" class="dropdown-item">Badges</a>
+                <a href="bootstrap.html/#Dropdowns" class="dropdown-item">Dropdowns</a>
+                <a href="bootstrap.html/#Pagination" class="dropdown-item">Pagination</a>
+                <a href="bootstrap.html/#Forms" class="dropdown-item">Forms</a>
+            </div>
+        </div>
+    </div>
+</nav>
 <div>
-    <h1>Cheat Sheet CSS</h1>
-    <nav class="header">
-        <a href="mainsite.html" class=header_button>Main</a>
-        <a href="http.html" class=header_button>HTTP</a>
-        <a href="url.html" class=header_button>URLs</a>
-        <a href="webbrowser.html" class=header_button>Web Browser</a>
-        <a href="webserver.html" class=header_button>Web Server</a>
-        <a href="worldwideweb.html" class=header_button>World Wide Web</a>
-        <a href="html.html" class=header_button>HTML</a>
-        <a href="CSS.html" class="header_button">CSS</a>
-        <a href="javascript.html" class="header_button">JavaScript</a>
-        <a href="bootstrap.html" class="header_button">Bootstrap</a>
-    </nav>
-</div>
-<div>
-    <h2 id="css">
-    CSS
-    </h2>
-</div>
-<div>
-    <h3 id="syntax">
-        Syntax
-    </h3>
-    <p>
-        Selectors point to the element to style. The declaration block contains one or more declarations (seperated by a
-        ";"). Each declaration includes a CSS property name and a value, separated by a colon. Multiple CSS declarations are
-        separated with semicolons, and declaration blocks are surrounded by curly braces.
-    </p>
-</div>
-<div>
-    <h3 id="selectors">
-        Selectors
-    </h3>
-    <p>
-        Used to find or select elements to style. Can be divided into:
-    </p>
-    <ul>
-        <li>Simple selectors (based on name, id, class)</li>
-        <li>Combinator selectors (based on specific relationship</li>
-        <li>Pseudo-class selectors (based on certain state)</li>
-        <li>Pseudo-element selectors (select and style a part)</li>
-        <li>Attribute selectors (based on attribute and attribute values)</li>
-    </ul>
-    <p>
-        The element selectors select based on name.
-    </p>
-    <p>
-        The id selectors select based on id attribute. IDs are unique so it is used to select an unique element.
-    </p>
-    <p>
-        The class selector selects HTML elements with a specific class attribute.
-    </p>
-    <p>
-        The universal selector selects all elements.
-    </p>
-    <p>
-        The grouping selector selects all elements with the same style.
-    </p>
-</div>
-<div>
-    <h3 id="color">
-        Color
-    </h3>
-    <p>
-        Can be selected with names or values (for example rbg or hex code). You can edit the color of text, background and
-        borders.
-    </p>
-</div>
-<div>
-    <h3 id="backgrounds">
-        Backgrounds
-    </h3>
-    <p>
-        You can color the background of specific elements. You can also change the opacity.
-    </p>
-    <pre>
+    <div>
+        <h1>Cheat Sheet CSS</h1>
+    </div>
+    <div>
+        <h2 id="css">
+            CSS
+        </h2>
+    </div>
+    <div>
+        <h3 id="syntax">
+            Syntax
+        </h3>
+        <p>
+            Selectors point to the element to style. The declaration block contains one or more declarations (seperated
+            by a
+            ";"). Each declaration includes a CSS property name and a value, separated by a colon. Multiple CSS
+            declarations are
+            separated with semicolons, and declaration blocks are surrounded by curly braces.
+        </p>
+    </div>
+    <div>
+        <h3 id="selectors">
+            Selectors
+        </h3>
+        <p>
+            Used to find or select elements to style. Can be divided into:
+        </p>
+        <ul>
+            <li>Simple selectors (based on name, id, class)</li>
+            <li>Combinator selectors (based on specific relationship</li>
+            <li>Pseudo-class selectors (based on certain state)</li>
+            <li>Pseudo-element selectors (select and style a part)</li>
+            <li>Attribute selectors (based on attribute and attribute values)</li>
+        </ul>
+        <p>
+            The element selectors select based on name.
+        </p>
+        <p>
+            The id selectors select based on id attribute. IDs are unique so it is used to select an unique element.
+        </p>
+        <p>
+            The class selector selects HTML elements with a specific class attribute.
+        </p>
+        <p>
+            The universal selector selects all elements.
+        </p>
+        <p>
+            The grouping selector selects all elements with the same style.
+        </p>
+    </div>
+    <div>
+        <h3 id="color">
+            Color
+        </h3>
+        <p>
+            Can be selected with names or values (for example rbg or hex code). You can edit the color of text,
+            background and
+            borders.
+        </p>
+    </div>
+    <div>
+        <h3 id="backgrounds">
+            Backgrounds
+        </h3>
+        <p>
+            You can color the background of specific elements. You can also change the opacity.
+        </p>
+        <pre>
         div {
           background-color: green;
           opacity: 0.3;
         }
     </pre>
-    <p>
-        The background-image property specifies an image to use as the background of an element.
-    </p>
-    <pre>
+        <p>
+            The background-image property specifies an image to use as the background of an element.
+        </p>
+        <pre>
         body {
           background-image: url("paper.gif");
         }
     </pre>
-    <p>
-        By default, the background-image property repeats an image both horizontally and vertically.
-    </p>
-    <pre>
+        <p>
+            By default, the background-image property repeats an image both horizontally and vertically.
+        </p>
+        <pre>
         body {
           background-image: url("gradient_bg.png");
         }
     </pre>
-    <p>
-        If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:
-    </p>
-    <pre>
+        <p>
+            If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look
+            better:
+        </p>
+        <pre>
         body {
           background-image: url("gradient_bg.png");
           background-repeat: repeat-x;
         }
     </pre>
-    <p>
-        This can also be done with no-repeat and y.
-    </p>
-    <h3 id="text">
-        Text
-    </h3>
-</div>
-<div>
-    <p>
-        Css has a lot of things that can be changed in text, for example the color of the text itself or the background
-        color of the text.
-    </p>
-    <p>
-        The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned,
-        centered, or justified.
-    </p>
-    <p>
-        The text-align-last property specifies how to align the last line of a text.
-    </p>
-    <pre>
+        <p>
+            This can also be done with no-repeat and y.
+        </p>
+    </div>
+    <div>
+        <h3 id="text">
+            Text
+        </h3>
+        <p>
+            Css has a lot of things that can be changed in text, for example the color of the text itself or the
+            background
+            color of the text.
+        </p>
+        <p>
+            The text-align property is used to set the horizontal alignment of a text. A text can be left or right
+            aligned,
+            centered, or justified.
+        </p>
+        <p>
+            The text-align-last property specifies how to align the last line of a text.
+        </p>
+        <pre>
         h1 {
           text-align: center;
         }
@@ -145,19 +270,19 @@
           text-align: right;
         }
     </pre>
-    <p>
-        The direction and unicode-bidi properties can be used to change the text direction of an element.
-    </p>
-    <p>
-        The vertical-align property sets the vertical alignment of an element.
-    </p>
-    <p>
-        The vertical-align property sets the vertical alignment of an element.
-    </p>
-    <p>
-        The text-decoration-line property is used to add a decoration line to text.
-    </p>
-    <pre>
+        <p>
+            The direction and unicode-bidi properties can be used to change the text direction of an element.
+        </p>
+        <p>
+            The vertical-align property sets the vertical alignment of an element.
+        </p>
+        <p>
+            The vertical-align property sets the vertical alignment of an element.
+        </p>
+        <p>
+            The text-decoration-line property is used to add a decoration line to text.
+        </p>
+        <pre>
         h1 {
             text-decoration-line: overline;
         }
@@ -174,29 +299,30 @@
           text-decoration-line: overline underline;
         }
     </pre>
-    <p>
-        The text-decoration-color property is used to set the color of the decoration line.
-    </p>
-    <p>
-        The text-decoration-style property is used to set the style of the decoration line.
-    </p>
-    <p>
-        The text-decoration-thickness property is used to set the thickness of the decoration line.
-    </p>
-    <p>
-        The text-decoration property is a shorthand property for:
-    </p>
-    <pre>
+        <p>
+            The text-decoration-color property is used to set the color of the decoration line.
+        </p>
+        <p>
+            The text-decoration-style property is used to set the style of the decoration line.
+        </p>
+        <p>
+            The text-decoration-thickness property is used to set the thickness of the decoration line.
+        </p>
+        <p>
+            The text-decoration property is a shorthand property for:
+        </p>
+        <pre>
         text-decoration-line (required)
         text-decoration-color (optional)
         text-decoration-style (optional)
         text-decoration-thickness (optional)
     </pre>
-    <p>
-        The text-transform property is used to specify uppercase and lowercase letters in a text. It can be used to turn
-        everything into uppercase or lowercase letters, or capitalize the first letter of each word.
-    </p>
-    <pre>
+        <p>
+            The text-transform property is used to specify uppercase and lowercase letters in a text. It can be used to
+            turn
+            everything into uppercase or lowercase letters, or capitalize the first letter of each word.
+        </p>
+        <pre>
         p.uppercase {
           text-transform: uppercase;
         }
@@ -209,10 +335,10 @@
           text-transform: capitalize;
         }
     </pre>
-    <p>
-        There's also alot to be done with spacing.
-    </p>
-    <pre>
+        <p>
+            There's also alot to be done with spacing.
+        </p>
+        <pre>
         p {
           text-indent: 50px;
           letter-spacing: 5px;
@@ -221,35 +347,36 @@
           white-space: nowrap;
         }
     </pre>
-    <p>
-        The above is pretty self-explanatory.
-    </p>
-</div>
-<div>
-    <h3 id="fonts">
-        Fonts
-    </h3>
-    <p>
-        Font can be very important. The most generic font families are:
-    </p>
-    <ul>
-        <li>Serif</li>
-        <li>Sans-Serif</li>
-        <li>Monospace</li>
-        <li>Cursive</li>
-        <li>Fantasy</li>
-    </ul>
-    <p>
-        The font family property can be used to specify the font of a text. Multiple fonts can be used in the font family. Should hold
-        several names as a fallback.
-    </p>
-    <p>
-        Web Safe fonts are fonts that most browsers and devices have.
-    </p>
-    <p>
-        font-style:
-    </p>
-    <pre>
+        <p>
+            The above is pretty self-explanatory.
+        </p>
+    </div>
+    <div>
+        <h3 id="fonts">
+            Fonts
+        </h3>
+        <p>
+            Font can be very important. The most generic font families are:
+        </p>
+        <ul>
+            <li>Serif</li>
+            <li>Sans-Serif</li>
+            <li>Monospace</li>
+            <li>Cursive</li>
+            <li>Fantasy</li>
+        </ul>
+        <p>
+            The font family property can be used to specify the font of a text. Multiple fonts can be used in the font
+            family. Should hold
+            several names as a fallback.
+        </p>
+        <p>
+            Web Safe fonts are fonts that most browsers and devices have.
+        </p>
+        <p>
+            font-style:
+        </p>
+        <pre>
         p.normal {
           font-style: normal;
         }
@@ -262,25 +389,25 @@
           font-style: oblique;
         }
     </pre>
-    <p>
-        Also specify weight with "font-weight".
-    </p>
-    <p>
-        The font-variant property specifies if a text should be displayed in a small-caps font.
-    </p>
-    <p>
-        For example small-caps font, which turns all letters into caps but with the heigh of lowercase letters.
-    </p>
-    <p>
-        With font-size you can control size.
-    </p>
-    <p>
-        In monospace every character is the same size.
-    </p>
-    <p>
-        When choosing fonts, many things are important:
-    </p>
-    <pre>
+        <p>
+            Also specify weight with "font-weight".
+        </p>
+        <p>
+            The font-variant property specifies if a text should be displayed in a small-caps font.
+        </p>
+        <p>
+            For example small-caps font, which turns all letters into caps but with the heigh of lowercase letters.
+        </p>
+        <p>
+            With font-size you can control size.
+        </p>
+        <p>
+            In monospace every character is the same size.
+        </p>
+        <p>
+            When choosing fonts, many things are important:
+        </p>
+        <pre>
         1. Complement
             Choose fonts that harmonize (not too similar or different).
         2. Use font superfamilies
@@ -290,90 +417,93 @@
         4.  Choose only one boss
             Only one font should be boss, establishing an hierarchy for the fonts used.
     </pre>
-    <p>
-        There also exists the property "font" which is a combination of many others:
-    </p>
-    <pre>
+        <p>
+            There also exists the property "font" which is a combination of many others:
+        </p>
+        <pre>
             font-style
             font-variant
             font-weight
             font-size/line-height
             font-family
     </pre>
-</div>
-<div>
-    <h3 id="links_2">
-        Links
-    </h3>
-    <p>
-        Links can be styled with any CSS property (e.g. color, font-family, background, etc.). They can also be edited
-        depending on the state of one.
-    </p>
-    <p>
-        Text deco can be used to remove underline.
-    </p>
-    <p>
-        Background color can also be configured.
-    </p>
-    <p>
-        Four states: link, visited, hover, active
-    </p>
-</div>
-<div>
-    <h3 id="combinators">
-        Combinators
-    </h3>
-    <p>
-        A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
-    </p>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Symbol</th>
-            <th>Explanation</th>
-        </tr>
-        <tr>
-            <td>descendant selector</td>
-            <td> (space)</td>
-            <td>The descendant selector matches all descendants of the element.</td>
-        </tr>
-        <tr>
-            <td>child selector</td>
-            <td> ></td>
-            <td>Child selectors selects elements that are children of the specified one.</td>
-        </tr>
-        <tr>
-            <td>adjacent sibling selector</td>
-            <td> +</td>
-            <td>The adjacent sibling selector is used to select an element that is directly after another specific
-            element.</td>
-        </tr>
-        <tr>
-            <td>general sibling selector</td>
-            <td> ~</td>
-            <td>The general sibling selector selects all the next siblings.</td>
-        </tr>
-    </table>
-    <p>
-        Sibling means the same parent, and adjacent means immediately following.
-    </p>
-</div>
-<div>
-    <h3 id="pseudo">
-        Pseudo-classes
-    </h3>
-    <p>
-        Used for a special state of an element. They can be combined with HTML classes.
-    </p>
-    <p>
-        Syntax:
-    </p>
-    <pre>
+    </div>
+    <div>
+        <h3 id="links_2">
+            Links
+        </h3>
+        <p>
+            Links can be styled with any CSS property (e.g. color, font-family, background, etc.). They can also be
+            edited
+            depending on the state of one.
+        </p>
+        <p>
+            Text deco can be used to remove underline.
+        </p>
+        <p>
+            Background color can also be configured.
+        </p>
+        <p>
+            Four states: link, visited, hover, active
+        </p>
+    </div>
+    <div>
+        <h3 id="combinators">
+            Combinators
+        </h3>
+        <p>
+            A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a
+            combinator.
+        </p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Explanation</th>
+            </tr>
+            <tr>
+                <td>descendant selector</td>
+                <td> (space)</td>
+                <td>The descendant selector matches all descendants of the element.</td>
+            </tr>
+            <tr>
+                <td>child selector</td>
+                <td> ></td>
+                <td>Child selectors selects elements that are children of the specified one.</td>
+            </tr>
+            <tr>
+                <td>adjacent sibling selector</td>
+                <td> +</td>
+                <td>The adjacent sibling selector is used to select an element that is directly after another specific
+                    element.
+                </td>
+            </tr>
+            <tr>
+                <td>general sibling selector</td>
+                <td> ~</td>
+                <td>The general sibling selector selects all the next siblings.</td>
+            </tr>
+        </table>
+        <p>
+            Sibling means the same parent, and adjacent means immediately following.
+        </p>
+    </div>
+    <div>
+        <h3 id="pseudo">
+            Pseudo-classes
+        </h3>
+        <p>
+            Used for a special state of an element. They can be combined with HTML classes.
+        </p>
+        <p>
+            Syntax:
+        </p>
+        <pre>
         selector:pseudo-class {
           property: value;
         }
     </pre>
-    <pre>
+        <pre>
         /* unvisited link */
         a:link {
           color: #FF0000;
@@ -394,150 +524,151 @@
           color: #0000FF;
         }
     </pre>
-    <p>
-        An example of using the :hover pseudo-class on a &lt;div&gt; element:
-    </p>
-    <pre>
+        <p>
+            An example of using the :hover pseudo-class on a &lt;div&gt; element:
+        </p>
+        <pre>
         div:hover {
           background-color: blue;
         }
     </pre>
-    <p>
-        In the following example, the selector matches the first &lt;i&gt; element in all &lt;p> elements:
-    </p>
-    <pre>
+        <p>
+            In the following example, the selector matches the first &lt;i&gt; element in all &lt;p> elements:
+        </p>
+        <pre>
         p i:first-child {
           color: blue;
         }
     </pre>
-    <p>
-        In the following example, the selector matches all &lt;i> elements in &lt;p> elements that are the first child of
-        another element:
-    </p>
-    <pre>
+        <p>
+            In the following example, the selector matches all &lt;i> elements in &lt;p> elements that are the first
+            child of
+            another element:
+        </p>
+        <pre>
         p:first-child i {
           color: blue;
         }
     </pre>
-</div>
-<div>
-    <h3 id="css_lists">CSS for lists</h3>
-    <table>
-        <tr>
-            <th>CSS syntax</th>
-            <th>Explanation</th>
-        </tr>
-        <tr>
-            <td>list-style-type</td>
-            <td>Sets the marker (such as a disc, character, or custom counter style) of a list item element.</td>
-        </tr>
-        <tr>
-            <td>list-style-image</td>
-            <td>Sets an image to be used as the list item marker.</td>
-        </tr>
-        <tr>
-            <td>list-style-position</td>
-            <td>Sets the position of the ::marker relative to a list item.</td>
-        </tr>
-    </table>
-</div>
-<div>
-    <h3 id="css_table">CSS for table cells</h3>
-    <table>
-        <tr>
-            <th>CSS Syntax</th>
-            <th>Explanation</th>
-        </tr>
-        <tr>
-            <td>border:</td>
-            <td>Size of the border and color</td>
-        </tr>
-        <tr>
-            <td>width:</td>
-            <td>How much of the screen (percentages) the table takes up.</td>
-        </tr>
-        <tr>
-            <td>border-radius</td>
-            <td>Rounded corners with specified size</td>
-        </tr>
-        <tr>
-            <td>border-collapse</td>
-            <td>whether cells inside a &lt;table&gt; have shared or separate borders (seperate or collapse).</td>
-        </tr>
-        <tr>
-            <td>border-spacing</td>
-            <td>Sets the space between different cells.</td>
-        </tr>
-        <tr>
-            <td>border-style</td>
-            <td>Sets the line style for all four sides of an element's border.</td>
-        </tr>
-        <tr>
-            <td>border-width</td>
-            <td>Sets the width of the border on every side.</td>
-        </tr>
-    </table>
-</div>
-<div>
-    <h2 id="id_classes">IDs and Classes</h2>
-</div>
-<div>
-    <h3 id="rules">CSS Rules</h3>
-    <p>
-        Contain selectors, contain declarations, contain a property and contain a value
-    </p>
-</div>
-<div>
-    <h3 id="classes">CSS Classes</h3>
-    <p>
-        Differentiate two of the same element for example.
-    </p>
-    <p>
-        Classes are used to make an HTML element addressable from internal/external CSS.
-    </p>
-    <p>
-        These elements may appear more than once in a page.
-    </p>
-    <p>
-        Classes are used with an ".".
-    </p>
-</div>
-<div>
-    <h3 id="id">IDs</h3>
-    <p>
-        Used with an "#".
-    </p>
-    <p>
-        Make a Html element addressable from an internal/external Css
-    </p>
-    <p>
-        The Html element may appear only once on the page
-    </p>
-    <p>
-        When using an ID or Class you don't have to specify the element, you can just use .(class) or #(id).
-    </p>
-</div>
-<div>
-    <h2 id="block_inline">Block and Inline elements</h2>
-    <p>Blocks take an extra line.</p>
-    <p>Examples for block: article, section, p, hl -6, div</p>
-    <p>Inline elements are in the "normal" text flow.</p>
-    <p>Examples: img, strong, em, img, span</p>
-    <p>You can edit the amount of distance to next elements with border, padding and margin</p>
-    <p>Example:</p>
-    <pre>
+    </div>
+    <div>
+        <h3 id="css_lists">CSS for lists</h3>
+        <table>
+            <tr>
+                <th>CSS syntax</th>
+                <th>Explanation</th>
+            </tr>
+            <tr>
+                <td>list-style-type</td>
+                <td>Sets the marker (such as a disc, character, or custom counter style) of a list item element.</td>
+            </tr>
+            <tr>
+                <td>list-style-image</td>
+                <td>Sets an image to be used as the list item marker.</td>
+            </tr>
+            <tr>
+                <td>list-style-position</td>
+                <td>Sets the position of the ::marker relative to a list item.</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h3 id="css_table">CSS for table cells</h3>
+        <table>
+            <tr>
+                <th>CSS Syntax</th>
+                <th>Explanation</th>
+            </tr>
+            <tr>
+                <td>border:</td>
+                <td>Size of the border and color</td>
+            </tr>
+            <tr>
+                <td>width:</td>
+                <td>How much of the screen (percentages) the table takes up.</td>
+            </tr>
+            <tr>
+                <td>border-radius</td>
+                <td>Rounded corners with specified size</td>
+            </tr>
+            <tr>
+                <td>border-collapse</td>
+                <td>whether cells inside a &lt;table&gt; have shared or separate borders (seperate or collapse).</td>
+            </tr>
+            <tr>
+                <td>border-spacing</td>
+                <td>Sets the space between different cells.</td>
+            </tr>
+            <tr>
+                <td>border-style</td>
+                <td>Sets the line style for all four sides of an element's border.</td>
+            </tr>
+            <tr>
+                <td>border-width</td>
+                <td>Sets the width of the border on every side.</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2 id="id_classes">IDs and Classes</h2>
+    </div>
+    <div>
+        <h3 id="rules">CSS Rules</h3>
+        <p>
+            Contain selectors, contain declarations, contain a property and contain a value
+        </p>
+    </div>
+    <div>
+        <h3 id="classes">CSS Classes</h3>
+        <p>
+            Differentiate two of the same element for example.
+        </p>
+        <p>
+            Classes are used to make an HTML element addressable from internal/external CSS.
+        </p>
+        <p>
+            These elements may appear more than once in a page.
+        </p>
+        <p>
+            Classes are used with an ".".
+        </p>
+    </div>
+    <div>
+        <h3 id="id">IDs</h3>
+        <p>
+            Used with an "#".
+        </p>
+        <p>
+            Make a Html element addressable from an internal/external Css
+        </p>
+        <p>
+            The Html element may appear only once on the page
+        </p>
+        <p>
+            When using an ID or Class you don't have to specify the element, you can just use .(class) or #(id).
+        </p>
+    </div>
+    <div>
+        <h2 id="block_inline">Block and Inline elements</h2>
+        <p>Blocks take an extra line.</p>
+        <p>Examples for block: article, section, p, hl -6, div</p>
+        <p>Inline elements are in the "normal" text flow.</p>
+        <p>Examples: img, strong, em, img, span</p>
+        <p>You can edit the amount of distance to next elements with border, padding and margin</p>
+        <p>Example:</p>
+        <pre>
             border: 20px solid grey;
             padding: 100px;
             margin: 100px;
         </pre>
-    <p>Inline elements only move left and right.</p>
-</div>
-<div>
-    <h3 id="floating_elements"></h3>
-    <p>All elements are in a "text flow"</p>
-    <p>Which means they come after each other</p>
-    <p>This may not be desirable, which we use float for</p>
-    <pre>
+        <p>Inline elements only move left and right.</p>
+    </div>
+    <div>
+        <h3 id="floating_elements"></h3>
+        <p>All elements are in a "text flow"</p>
+        <p>Which means they come after each other</p>
+        <p>This may not be desirable, which we use float for</p>
+        <pre>
             Example:
                 &lt;img src=”…” alt=”…”/&gt;
                 &lt;table&gt;
@@ -546,169 +677,174 @@
                 &lt;/table&gt;
                 img {float: right;}
         </pre>
-    <p>
-        Navigation as ul
-    </p>
-    <p>
-        li elements float left
-    </p>
-    <p>
-        Any content after this would ignore the li’s
-    </p>
-    <p>
-        section { clear: left }
-    </p>
-    <p>
-        The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it.
-    </p>
-</div>
-<div>
-    <h2 id="debugging">
-        Debugging
-    </h2>
-</div>
-<div>
-    <p>
-        Looking at elements the way in which the browser sees it.
-    </p>
-    <p>
-        This is done by inspecting the element in the browser itself.
-    </p>
-</div>
-<div>
-    <h2 id="margins_borders_padding">
-        Margins, borders and padding.
-    </h2>
-    <img src="../css_padding_border_margin.jpg" alt="Image displaying padding, border and margin." class="img_margin" />
-    <p>
-        All of these control the distance from one element to another in HTML.
-    </p>
-    <pre>
+        <p>
+            Navigation as ul
+        </p>
+        <p>
+            li elements float left
+        </p>
+        <p>
+            Any content after this would ignore the li’s
+        </p>
+        <p>
+            section { clear: left }
+        </p>
+        <p>
+            The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede
+            it.
+        </p>
+    </div>
+    <div>
+        <h2 id="debugging">
+            Debugging
+        </h2>
+    </div>
+    <div>
+        <p>
+            Looking at elements the way in which the browser sees it.
+        </p>
+        <p>
+            This is done by inspecting the element in the browser itself.
+        </p>
+    </div>
+    <div>
+        <h2 id="margins_borders_padding">
+            Margins, borders and padding.
+        </h2>
+        <img src="../css_padding_border_margin.jpg" alt="Image displaying padding, border and margin."
+             class="img_margin"/>
+        <p>
+            All of these control the distance from one element to another in HTML.
+        </p>
+        <pre>
         The margin can be edited with:
             margin-top
             margin-right
             margin-bottom
             margin-left
     </pre>
-    <p>Top and bottom margin don't work with inline elements.</p>
-    <p>The type (inline, block) can be controlled with the "display" command in css.</p>
-    <p>3 Kinds: inline, block and inline-block elements.</p>
-</div>
-<div>
-    <h2 id="gradients">
-        Gradients
-    </h2>
-    <p>
-        How to make a gradient:
-    </p>
-    <pre>
+        <p>Top and bottom margin don't work with inline elements.</p>
+        <p>The type (inline, block) can be controlled with the "display" command in css.</p>
+        <p>3 Kinds: inline, block and inline-block elements.</p>
+    </div>
+    <div>
+        <h2 id="gradients">
+            Gradients
+        </h2>
+        <p>
+            How to make a gradient:
+        </p>
+        <pre>
         #gradientbox {
             background-image:
                 linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
         }
     </pre>
-    <p>
-        'linear-gradient' defines that the background image will be a gradient.
-    </p>
-    <p>
-        'to right' defines the direction of the gradient.
-    </p>
-    <p>
-        After are the colors of the gradient.
-    </p>
-    <img class="img_margin" src="../gradient.jpg" alt="gradient visual explanation" />
-    <pre>
+        <p>
+            'linear-gradient' defines that the background image will be a gradient.
+        </p>
+        <p>
+            'to right' defines the direction of the gradient.
+        </p>
+        <p>
+            After are the colors of the gradient.
+        </p>
+        <img class="img_margin" src="../gradient.jpg" alt="gradient visual explanation"/>
+        <pre>
         to (left | right)
     </pre>
-    <p>
-        '|' means or
-    </p>
-    <p>
-        You can also set it do a specific angle (using the unit 'deg')
-    </p>
-    <p>
-        the color percentage comes after the color, and it's referring to the percentage along the gradient line where a particular color is applied.
-    </p>
-</div>
-<div>
-    <h3 id="radial_gradient">Radial Gradients</h3>
-    <pre>
+        <p>
+            '|' means or
+        </p>
+        <p>
+            You can also set it do a specific angle (using the unit 'deg')
+        </p>
+        <p>
+            the color percentage comes after the color, and it's referring to the percentage along the gradient line
+            where a particular color is applied.
+        </p>
+    </div>
+    <div>
+        <h3 id="radial_gradient">Radial Gradients</h3>
+        <pre>
         radial-gradient(ellipse, red, green, blue);
     </pre>
-    <p>
-        'ellipse' specifies the shape of the gradient. This may also be something such as 'circle'.
-    </p>
-    <p>
-        You can also change the origin of the radial gradient:
-    </p>
-    <pre>
+        <p>
+            'ellipse' specifies the shape of the gradient. This may also be something such as 'circle'.
+        </p>
+        <p>
+            You can also change the origin of the radial gradient:
+        </p>
+        <pre>
         radial-gradient(circle at 130px (from the left side) 60px (from the top)....);
     </pre>
-    <img class="img_margin" src="../radial_gradient.png" alt="radial gradient demonstration" />
-    <p>
-        Round corners using: border-radius: 1(unit);
-    </p>
-    <p>
-        Elements can have shadows using the command: box-shadow: 10px 20px 5px #888888
-    </p>
-    <p>
-        The first unit describes the horizontal offset, the second the vertical and the last the blur distance. The last rule changes the color.
-    </p>
-</div>
-<div>
-    <h2 id="transitions">Transitions</h2>
-    <p>
-        Purpose of transitions are:
-    </p>
-    <ol>
-        <li>Changes shouldn't happen immediately</li>
-        <li>Changes should be animated</li>
-    </ol>
-    <p>
-        'transition-property': which element should be affected?
-    </p>
-    <p>
-        'transition-duration': how long should the transition last?
-    </p>
-    <p>
-        'transition-timing-function property describes how the intermediate values used during a transition will be calculated
-    </p>
-    <p>
-        'transition-delay' when the transition should start.
-    </p>
-    <p>
-        'transition' can be used as a shorthand property.
-    </p>
-</div>
-<div>
-    <h2 id="animations">Animations</h2>
-    <p>
-        Reasons for animation:
-    </p>
-    <ul>
-        <li>Intermediate color values required</li>
-        <li>Animation should start over after finishing</li>
-        <li>Bouncing effects</li>
-    </ul>
-    <p>
-        animation-name: rainbow; (Refers to specific keyframe)
-    </p>
-    <p>
-        animation-duration: (specifies how long an animation should last)
-    </p>
-    <p>
-        animation-iteration-count: infinite; (how often to start over)
-    </p>
-    <p>
-        'animation-direction':
-    </p>
-    <ul>
-        <li>Reverse</li>
-        <li>Normal</li>
-        <li>Alternate (changes between normal and reverse)</li>
-        <li>Alternate-reverse</li>
-    </ul>
-    <pre>
+        <img class="img_margin" src="../radial_gradient.png" alt="radial gradient demonstration"/>
+        <p>
+            Round corners using: border-radius: 1(unit);
+        </p>
+        <p>
+            Elements can have shadows using the command: box-shadow: 10px 20px 5px #888888
+        </p>
+        <p>
+            The first unit describes the horizontal offset, the second the vertical and the last the blur distance. The
+            last rule changes the color.
+        </p>
+    </div>
+    <div>
+        <h2 id="transitions">Transitions</h2>
+        <p>
+            Purpose of transitions are:
+        </p>
+        <ol>
+            <li>Changes shouldn't happen immediately</li>
+            <li>Changes should be animated</li>
+        </ol>
+        <p>
+            'transition-property': which element should be affected?
+        </p>
+        <p>
+            'transition-duration': how long should the transition last?
+        </p>
+        <p>
+            'transition-timing-function property describes how the intermediate values used during a transition will be
+            calculated
+        </p>
+        <p>
+            'transition-delay' when the transition should start.
+        </p>
+        <p>
+            'transition' can be used as a shorthand property.
+        </p>
+    </div>
+    <div>
+        <h2 id="animations">Animations</h2>
+        <p>
+            Reasons for animation:
+        </p>
+        <ul>
+            <li>Intermediate color values required</li>
+            <li>Animation should start over after finishing</li>
+            <li>Bouncing effects</li>
+        </ul>
+        <p>
+            animation-name: rainbow; (Refers to specific keyframe)
+        </p>
+        <p>
+            animation-duration: (specifies how long an animation should last)
+        </p>
+        <p>
+            animation-iteration-count: infinite; (how often to start over)
+        </p>
+        <p>
+            'animation-direction':
+        </p>
+        <ul>
+            <li>Reverse</li>
+            <li>Normal</li>
+            <li>Alternate (changes between normal and reverse)</li>
+            <li>Alternate-reverse</li>
+        </ul>
+        <pre>
         @keyframes rainbow {
             0% { background-color: red; }
             50% { background-color: yellow; }
@@ -716,51 +852,52 @@
             100% { background-color: green; }
         }
     </pre>
-</div>
-<div>
-    <h2 id="transform">Transformations</h2>
-    <p>
-        'transform':
-    </p>
-    <ul>
-        <li>Scale</li>
-        <li>Rotate</li>
-        <li>Translate (repositions an element in the horizontal and/or </li>
-        <li>Skew</li>
-    </ul>
-</div>
-<div>
-    <h2 id="positioning">Positioning</h2>
-    <p>
-        Static: Element appears in text flow
-    </p>
-    <p>
-        Fixed: Relative to the browser window
-    </p>
-    <p>
-        Relative: relative to its normal position
-    </p>
-    <p>
-        Absolute: relative to its first parent element which position is not static
-    </p>
-</div>
-<div>
-    <h2 id="keyframes">
-        Keyframes
-    </h2>
-    <p>
-        The @keyframes rule specifies the animation code.
-    </p>
-    <p>
-        The animation is created by gradually changing from one set of CSS styles to another.
-    </p>
-    <p>
-        During the animation, you can change the set of CSS styles many times.
-    </p>
-    <p>
-        Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.
-    </p>
-    <pre>
+    </div>
+    <div>
+        <h2 id="transform">Transformations</h2>
+        <p>
+            'transform':
+        </p>
+        <ul>
+            <li>Scale</li>
+            <li>Rotate</li>
+            <li>Translate (repositions an element in the horizontal and/or</li>
+            <li>Skew</li>
+        </ul>
+    </div>
+    <div>
+        <h2 id="positioning">Positioning</h2>
+        <p>
+            Static: Element appears in text flow
+        </p>
+        <p>
+            Fixed: Relative to the browser window
+        </p>
+        <p>
+            Relative: relative to its normal position
+        </p>
+        <p>
+            Absolute: relative to its first parent element which position is not static
+        </p>
+    </div>
+    <div>
+        <h2 id="keyframes">
+            Keyframes
+        </h2>
+        <p>
+            The @keyframes rule specifies the animation code.
+        </p>
+        <p>
+            The animation is created by gradually changing from one set of CSS styles to another.
+        </p>
+        <p>
+            During the animation, you can change the set of CSS styles many times.
+        </p>
+        <p>
+            Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the
+            same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.
+        </p>
+        <pre>
         Example:
             @keyframes mymove {
               0%   {top: 0px;}
@@ -770,44 +907,57 @@
               100% {top: 0px;}
             }
     </pre>
-    <p>
-        Usage: animation: mymove 5s infinite;
-    </p>
-    <p>
-        Change things such as:
-    </p>
-    <ol>
-        <li>animation-duration</li>
-        <li>animation-iteration-count: how many times animation repeats.</li>
-        <li>animation-direction
-            <ol>
-                <li>normal - The animation is played as normal (forwards). This is default</li>
-                <li>reverse - The animation is played in reverse direction (backwards)</li>
-                <li>alternate - The animation is played forwards first, then backwards</li>
-                <li>alternate-reverse - The animation is played backwards first, then forwards</li>
-            </ol>
-        </li>
-        <li>animation-timing-function
-            <ol>
-                <li>ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)</li>
-                <li>linear - Specifies an animation with the same speed from start to end</li>
-                <li>ease-in - Specifies an animation with a slow start</li>
-                <li>ease-out - Specifies an animation with a slow end</li>
-                <li>ease-in-out - Specifies an animation with a slow start and end</li>
-                <li>cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function</li>
-            </ol>
-        </li>
-        <li>animation-fill-mode
-            <ol>
-                <li>none - Default value. Animation will not apply any styles to the element before or after it is executing</li>
-                <li>forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)</li>
-                <li>backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period</li>
-                <li>both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions</li>
-            </ol>
-        </li>
-        <li>animation-play-state: Paused or running</li>
-        <li>animation-timing-function: Specifies the speed curve of the animation</li>
-    </ol>
+        <p>
+            Usage: animation: mymove 5s infinite;
+        </p>
+        <p>
+            Change things such as:
+        </p>
+        <ol>
+            <li>animation-duration</li>
+            <li>animation-iteration-count: how many times animation repeats.</li>
+            <li>animation-direction
+                <ol>
+                    <li>normal - The animation is played as normal (forwards). This is default</li>
+                    <li>reverse - The animation is played in reverse direction (backwards)</li>
+                    <li>alternate - The animation is played forwards first, then backwards</li>
+                    <li>alternate-reverse - The animation is played backwards first, then forwards</li>
+                </ol>
+            </li>
+            <li>animation-timing-function
+                <ol>
+                    <li>ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+                    </li>
+                    <li>linear - Specifies an animation with the same speed from start to end</li>
+                    <li>ease-in - Specifies an animation with a slow start</li>
+                    <li>ease-out - Specifies an animation with a slow end</li>
+                    <li>ease-in-out - Specifies an animation with a slow start and end</li>
+                    <li>cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function</li>
+                </ol>
+            </li>
+            <li>animation-fill-mode
+                <ol>
+                    <li>none - Default value. Animation will not apply any styles to the element before or after it is
+                        executing
+                    </li>
+                    <li>forwards - The element will retain the style values that is set by the last keyframe (depends on
+                        animation-direction and animation-iteration-count)
+                    </li>
+                    <li>backwards - The element will get the style values that is set by the first keyframe (depends on
+                        animation-direction), and retain this during the animation-delay period
+                    </li>
+                    <li>both - The animation will follow the rules for both forwards and backwards, extending the
+                        animation properties in both directions
+                    </li>
+                </ol>
+            </li>
+            <li>animation-play-state: Paused or running</li>
+            <li>animation-timing-function: Specifies the speed curve of the animation</li>
+        </ol>
+    </div>
 </div>
-    </body>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </html>
