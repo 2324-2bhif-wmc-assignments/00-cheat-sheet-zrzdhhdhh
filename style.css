@@ -7,12 +7,18 @@
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0%;
+    height: 100%;
+    width: 15%;
     background-color: #222222;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    border-radius: 1rem;
 }
 
-.header > div > a {
+.header > a {
     text-align: center;
     border: solid white;
     width: 100%;
@@ -22,11 +28,11 @@
     border-radius: 0.5rem;
     text-decoration: none;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.5rem;
     float: left;
 }
 
-.header > div > a:hover {
+.header > a:hover {
     transition-duration: 1s;
     border-color: #222222;
     background-color: #ffffff;
@@ -35,20 +41,22 @@
 
 nav + div {
     padding-top: 3rem;
-    margin-top: 2rem;
-    background-image: radial-gradient(circle farthest-corner, purple 0%, magenta 50%, deepskyblue 100%);
+    background-image: radial-gradient(circle at 53rem, rgb(211, 114, 211) 0%, #e5a3e5 50%, #b4d8e7 100%);
+    padding-bottom: 3rem;
 }
-div > div{
+div > div:not(.card):not(.card-body){
     height: 100%;
-    padding-top: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 15rem;
+    padding: 1rem;
+    margin-left: 18.5rem;
     margin-top: 1rem;
-    margin-right: 3rem;
+    margin-right: 5rem;
     background-image: radial-gradient(circle, #FEFEFE 0%, #EEEEEE 100%);
     border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 30%);
+}
+
+.card {
+    margin-left: 3rem;
 }
 
 h2, h3 {
@@ -57,7 +65,7 @@ h2, h3 {
     padding-bottom: 1rem;
 }
 
-p, pre, ul {
+p, pre, ul, td, th {
     padding-left: 3rem;
     padding-right: 3rem;
 }
@@ -66,4 +74,29 @@ li {
     padding-left: 5rem;
     padding-right: 5rem;
     list-style-position: initial;
+}
+
+#graphics_design {
+    border-radius: 30000rem;
+    position: fixed;
+    margin-top: 7rem;
+    margin-left: 35.5rem;
+    animation-name: cool;
+    transition: ease-in-out;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cool {
+    0% {
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header_image {
+    height: 1.5rem;
 }
